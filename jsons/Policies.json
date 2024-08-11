@@ -262,7 +262,7 @@
                 "column": 4
             },
             {
-                "name": "Piety Complete",
+                "name": "State Religion Complete",
                 "uniques": [
                     "[Faith] cost of purchasing items in cities [-20]%",
                     "[+3 Gold, +3 Culture] from every [Holy site]"
