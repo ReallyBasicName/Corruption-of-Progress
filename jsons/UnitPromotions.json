@@ -1,0 +1,590 @@
+[
+
+	// Global Uniques
+
+	{
+		"name": "Heal Instantly",
+		"uniques": ["Heal this unit by [50] HP", "Doing so will consume this opportunity to choose a Promotion"],
+		"unitTypes": ["Infantry","Sniper","Cavalry","Scout","Siege","Armor","Melee Water","Ranged Water","Submarine"],
+        "row": 0,
+        "column": 0
+    },
+
+	// Sniper+Siege
+
+	// Infantry, Cavalry+Armor
+	
+
+	// Scout
+	{
+		"name": "Scouting I",
+		"uniques": ["[+1] Sight"],
+		"unitTypes": ["Scout"],
+        "column": 8,
+        "row": 1
+	},
+	{
+		"name": "Scouting II",
+		"prerequisites": ["Scouting I"],
+		"uniques": ["[+1] Sight"],
+		"unitTypes": ["Scout"],
+        "column": 8,
+        "row": 2
+	},
+	{
+		"name": "Scouting III",
+		"prerequisites": ["Scouting II"],
+		"uniques": ["[+1] Movement"],
+		"unitTypes": ["Scout"],
+        "column": 8,
+        "row": 3
+	},
+	{
+		"name": "Survivalism I",
+		"uniques": ["[+5] HP when healing <in [Foreign Land] tiles>", "[+25]% Strength <when defending>"],
+		"unitTypes": ["Scout"],
+        "column": 9,
+        "row": 1
+	},
+	{
+		"name": "Survivalism II",
+		"prerequisites": ["Survivalism I"],
+		"uniques": ["[+5] HP when healing <in [Foreign Land] tiles>", "[+25]% Strength <when defending>"],
+		"unitTypes": ["Scout"],
+        "column": 9,
+        "row": 2
+	},
+	{
+		"name": "Survivalism III",
+		"prerequisites": ["Survivalism II"],
+		"uniques": ["Unit will heal every turn, even if it performs an action", "Withdraws before melee combat <with [75]% chance>"], // This number is not based on any source
+		"unitTypes": ["Scout"],
+        "column": 9,
+        "row": 3
+	},
+
+
+	// Water melee
+	{
+		"name": "Boarding Party I",
+		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"unitTypes": ["Melee Water"],
+        "column": 11,
+        "row": 1
+	},
+	{
+		"name": "Boarding Party II",
+		"prerequisites": ["Boarding Party I"],
+		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"unitTypes": ["Melee Water"],
+        "column": 11,
+        "row": 2
+	},
+	{
+		"name": "Boarding Party III",
+		"prerequisites": ["Boarding Party II"],
+		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"unitTypes": ["Melee Water"],
+        "column": 11,
+        "row": 3
+	},
+
+	{
+		"name": "Coastal Raider I",
+		"uniques": ["[+20]% Strength <vs cities>", "Earn [33]% of the damage done to [City] units as [Gold]"],
+		"unitTypes": ["Melee Water"],
+        "column": 12,
+        "row": 1
+	},
+	{
+		"name": "Coastal Raider II",
+		"prerequisites": ["Coastal Raider I"],
+		"uniques": ["[+20]% Strength <vs cities>", "Earn [33]% of the damage done to [City] units as [Gold]"],
+		"unitTypes": ["Melee Water"],
+        "column": 12,
+        "row": 2
+	},
+	{
+		"name": "Coastal Raider III",
+		"prerequisites": ["Coastal Raider II"],
+		"uniques": ["[+20]% Strength <vs cities>", "Earn [33]% of the damage done to [City] units as [Gold]"],
+		"unitTypes": ["Melee Water"],
+        "column": 12,
+        "row": 3
+	},
+	{
+		"name": "Landing Party",
+		"uniques": ["Eliminates combat penalty for attacking across a coast"],
+		"unitTypes": ["Melee Water"],
+        "column": 12,
+        "row": 5
+	},
+
+	// Water Ranged
+	{
+		"name": "Targeting I",
+		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"unitTypes": ["Ranged Water"],
+        "column": 13,
+        "row": 1
+	},
+	{
+		"name": "Targeting II",
+		"prerequisites": ["Targeting I"],
+		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"unitTypes": ["Ranged Water"],
+        "column": 13,
+        "row": 2
+	},
+	{
+		"name": "Targeting III",
+		"prerequisites": ["Targeting II"],
+		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"unitTypes": ["Ranged Water"],
+        "column": 13,
+        "row": 3
+	},
+
+	// Submarine
+	{
+		"name": "Wolfpack I",
+		"uniques": ["[+25]% Strength <when attacking>"],
+		"unitTypes": ["Submarine"],
+        "column": 14,
+        "row": 1
+	},
+	{
+		"name": "Wolfpack II",
+		"prerequisites": ["Wolfpack I"],
+		"uniques": ["[+25]% Strength <when attacking>"],
+		"unitTypes": ["Submarine"],
+        "column": 14,
+        "row": 2
+	},
+	{
+		"name": "Wolfpack III",
+		"prerequisites": ["Wolfpack II"],
+		"uniques": ["[+25]% Strength <when attacking>"],
+		"unitTypes": ["Submarine"],
+        "column": 14,
+        "row": 3
+	},
+
+	// Aircraft Carrier
+	{
+		"name": "Armor Plating I",
+		"uniques": ["[+25]% Strength <when defending>"],
+		"unitTypes": ["Aircraft Carrier"],
+        "column": 15,
+        "row": 1
+	},
+	{
+		"name": "Armor Plating II",
+		"prerequisites": ["Armor Plating I"],
+		"uniques": ["[+25]% Strength <when defending>"],
+		"unitTypes": ["Aircraft Carrier"],
+        "column": 15,
+        "row": 2
+	},
+	{
+		"name": "Armor Plating III",
+		"prerequisites": ["Armor Plating II"],
+		"uniques": ["[+25]% Strength <when defending>"],
+		"unitTypes": ["Aircraft Carrier"],
+        "column": 15,
+        "row": 3
+	},
+	{
+		"name": "Flight Deck I",
+		"uniques": ["Can carry [1] extra [Aircraft] units"],
+		"unitTypes": ["Aircraft Carrier"],
+        "column": 16,
+        "row": 1
+	},
+	{
+		"name": "Flight Deck II",
+		"prerequisites": ["Flight Deck I"],
+		"uniques": ["Can carry [1] extra [Aircraft] units"],
+		"unitTypes": ["Aircraft Carrier"],
+        "column": 16,
+        "row": 2
+	},
+	{
+		"name": "Flight Deck III",
+		"prerequisites": ["Flight Deck II"],
+		"uniques": ["Can carry [1] extra [Aircraft] units"],
+		"unitTypes": ["Aircraft Carrier"],
+        "column": 16,
+        "row": 3
+	},
+
+	// Mixed Water
+	{
+		"name" : "Supply",
+		"prerequisites": ["Bombardment III", "Targeting III", "Boarding Party III", "Coastal Raider III"],
+		"uniques": ["May heal outside of friendly territory", "[+15] HP when healing <in [Foreign Land] tiles>"],
+		"unitTypes": ["Melee Water", "Ranged Water"],
+        "column": 16,
+        "row": 4
+	},
+
+	// Bomber
+	{
+		"name": "Siege I",
+		"uniques": ["[+33]% Strength <vs cities>"],
+		"unitTypes": ["Bomber"],
+        "column": 17,
+        "row": 1
+	},
+	{
+		"name": "Siege II",
+		"prerequisites": ["Siege I"],
+		"uniques": ["[+33]% Strength <vs cities>"],
+		"unitTypes": ["Bomber"],
+        "column": 17,
+        "row": 2
+	},
+	{
+		"name": "Siege III",
+		"prerequisites": ["Siege II"],
+		"uniques": ["[+34]% Strength <vs cities>"],
+		"unitTypes": ["Bomber"],
+        "column": 17,
+        "row": 3
+	},
+	{
+		"name": "Evasion",
+		"prerequisites": ["Siege II", "Bombardment II"],
+		"uniques": ["Damage taken from interception reduced by [50]%"],
+		"unitTypes": ["Bomber"],
+        "column": 17,
+        "row": 4
+	},
+
+	// Water ranged and air units
+	{
+		"name": "Bombardment I",
+		"uniques": ["[+33]% Strength <vs [Land] units>"],
+		"unitTypes": ["Ranged Water","Fighter","Bomber"],
+        "column": 26,
+        "row": 1
+	},
+	{
+		"name": "Bombardment II",
+		"prerequisites": ["Bombardment I"],
+		"uniques": ["[+33]% Strength <vs [Land] units>"],
+		"unitTypes": ["Ranged Water","Fighter","Bomber"],
+        "column": 26,
+        "row": 2
+	},
+	{
+		"name": "Bombardment III",
+		"prerequisites": ["Bombardment II"],
+		"uniques": ["[+34]% Strength <vs [Land] units>"],
+		"unitTypes": ["Ranged Water","Fighter","Bomber"],
+        "column": 26,
+        "row": 3
+	},
+
+	// Uniques that should be kept on upgrades
+	
+	{
+		"name": "Morale", // Heroic Epic
+		"uniques": ["[+15]% Strength"]
+	},
+	{
+		"name": "Great Generals I", // only for Companion Cavalry, Keshik and their subsequent upgrades
+		"uniques": ["[Great General] is earned [50]% faster"]
+	},
+	{
+		"name": "Great Generals II", // only for Samurai and subsequent upgrades
+		"uniques": ["[Great General] is earned [100]% faster"]
+	},
+	{
+		"name": "Quick Study", // only for Keshik and subsequent upgrades
+		"uniques": ["[+50]% XP gained from combat"]
+	},
+	{
+		"name": "Haka War Dance", // only for Maori Warrior and subsequent upgrades
+		"uniques": ["[-10]% Strength for enemy [Military] units in adjacent [All] tiles"]
+	},
+	{
+		"name": "Rejuvenation", // only for Units that have been close to Natural Wonder Fountain of Youth
+		"uniques": ["All healing effects doubled"]
+	},
+	{
+		"name": "Slinger Withdraw", // only for Slinger and subsequent upgrades
+		"uniques": ["Withdraws before melee combat <with [80]% chance>"]
+	},
+	{
+		"name": "Ignore terrain cost",
+		"uniques": ["Ignores terrain cost"]
+	},
+	{
+		"name": "Pictish Courage", // only for Pictish Warrior and subsequent upgrades
+		"uniques": ["No movement cost to pillage", "[+20]% Strength <when fighting in [Foreign Land] tiles>"]
+	},
+	{
+		"name": "Remembrance", // only for Tormented Units
+		"uniques": ["[+30]% Strength decreasing with distance from the capital"]
+	},
+    {
+        "name": "Devout",
+        "uniques": ["Can Spread Religion <[1] additional time(s)>"]
+    },
+	{
+		"name": "[Mohawk Warrior] ability",
+		"uniques": ["[+33]% Strength <when fighting in [Forest] tiles>", "[+33]% Strength <when fighting in [Jungle] tiles>"]
+	},
+	{
+		"name": "[Jaguar] ability",
+		"uniques": ["[+33]% Strength <when fighting in [Forest] tiles>", "[+33]% Strength <when fighting in [Jungle] tiles>", "Heals [25] damage if it kills a unit"]
+	},
+	{
+		"name": "[Persian Immortal] ability",
+		"uniques": ["[+10] HP when healing"]
+	},
+	{
+		"name": "[Conquistador] ability",
+		"uniques": ["Defense bonus when embarked"]
+	},
+	{
+		"name": "[Janissary] ability",
+		"uniques": ["Heals [50] damage if it kills a unit", "[+25]% Strength <when attacking>"]
+	},
+	{
+		"name": "[Sipahi] ability",
+		"uniques": ["No movement cost to pillage"]
+	},
+	{
+		"name": "[Cossack] ability",
+		"uniques": ["[+50]% Strength <vs [Wounded] units>"]
+	},
+	{
+		"name": "[Hussar] ability",
+		"uniques": ["[+50]% to Flank Attack bonuses"]
+	},
+	{
+		"name": "[Norwegian Ski Infantry] ability",
+		"uniques": ["[+25]% Strength <when fighting in [Snow] tiles>",
+			"[+25]% Strength <when fighting in [Tundra] tiles>",
+			"[+25]% Strength <when fighting in [Hill] tiles>",
+			"Double movement in [Snow]",
+			"Double movement in [Tundra]",
+			"Double movement in [Hill]"]
+	},
+	{
+		"name": "[Hakkapeliitta] ability",
+		"uniques": ["Transfer Movement to [Great General]", "[+15]% Strength when stacked with [Great General]"]
+	},
+	{
+		"name": "[Zero] ability",
+		"uniques": ["[+33]% Strength <vs [Fighter] units>"]
+	},
+	{
+		"name": "[Chu-Ko-Nu] ability",
+		"uniques": ["[1] additional attacks per turn", "Can move after attacking"]
+	},
+	{	// For barbarian water units
+		"name": "Unable to pillage tiles",
+		"uniques": ["Unable to pillage tiles"]
+	}
+	
+	//// specialization bonus
+
+	{
+		"name": "Urban Warfare I",
+		"uniques": [
+			"[+20]% Strength <vs cities>",
+			"Only available <for units without [Blitz Warfare I]>"
+			"Only available <for units without [Ambush Warfare I]>"
+			"Only available <for units without [Fortress Warfare I]>"
+			"Only available <for units without [Guerilla Warfare I]>"
+			"Only available <for units without [Stonewall Warfare I]>"
+		],
+		"unitTypes": ["Infantry","Sniper","Cavalry"],
+		"column": 27,
+        "row": 1
+	},
+	{
+		"name": "Urban Warfare II",
+		"prerequisites": ["Urban Warfare I"],
+		"uniques": [
+			"[+50]% Strength <vs cities>",
+			"Only available <for units without [Blitz Warfare I]>"
+			"Only available <for units without [Ambush Warfare I]>"
+			"Only available <for units without [Fortress Warfare I]>"
+			"Only available <for units without [Guerilla Warfare I]>"
+			"Only available <for units without [Stonewall Warfare I]>"
+		],
+		"unitTypes": ["Infantry","Sniper","Cavalry"],
+		"column": 27,
+        "row": 2
+	},
+	{
+		"name": "Guerilla Warfare I",
+		"uniques": [
+			"Can move after attacking",
+			"[+10]% Strength <when fighting in [Rough terrain] tiles>",
+			"Only available <for units without [Blitz Warfare I]>"
+			"Only available <for units without [Urban Warfare I]>"
+			"Only available <for units without [Ambush Warfare I]>"
+			"Only available <for units without [Fortress Warfare I]>"
+			"Only available <for units without [Stonewall Warfare I]>"
+		],
+		"unitTypes": ["Infantry","Sniper","Cavalry"],
+		"column": 27,
+        "row": 3
+	},
+	{
+		"name": "Guerilla Warfare II",
+		"prerequisites": ["Guerilla Warfare I"],
+		"uniques": [
+			"[+30]% Strength <when fighting in [Hill] tiles>",
+			"[+10]% Strength <when attacking>",
+			"Only available <for units without [Blitz Warfare I]>"
+			"Only available <for units without [Urban Warfare I]>"
+			"Only available <for units without [Ambush Warfare I]>"
+			"Only available <for units without [Fortress Warfare I]>"
+			"Only available <for units without [Stonewall Warfare I]>"
+		],
+		"unitTypes": ["Infantry","Sniper","Cavalry"],
+		"column": 27,
+        "row": 4
+	},
+	{
+		"name": "Blitz Warfare I",
+		"uniques": [
+			"[+10]% Strength <when attacking>",
+			"[-10]% Strength <when defending>",
+			"[-5]% Strength <when fighting in [Rough terrain] tiles>",
+			"Only available <for units without [Urban Warfare I]>"
+			"Only available <for units without [Ambush Warfare I]>"
+			"Only available <for units without [Fortress Warfare I]>"
+			"Only available <for units without [Guerilla Warfare I]>"
+			"Only available <for units without [Stonewall Warfare I]>"
+		],
+		"unitTypes": ["Infantry","Sniper","Cavalry"],
+		"column": 28,
+        "row": 1
+	},
+	{
+		"name": "Blitz Warfare II",
+		"prerequisites": ["Blitz Warfare I"],
+		"uniques": [
+			"[+30]% Strength <when attacking>",
+			"[-20]% Strength <when defending>",
+			"[-10]% Strength <when fighting in [Hill] tiles>",
+			"Only available <for units without [Urban Warfare I]>"
+			"Only available <for units without [Ambush Warfare I]>"
+			"Only available <for units without [Fortress Warfare I]>"
+			"Only available <for units without [Guerilla Warfare I]>"
+			"Only available <for units without [Stonewall Warfare I]>"
+		],
+		"unitTypes": ["Infantry","Sniper","Cavalry"],
+		"column": 28,
+        "row": 2
+	},
+	{
+		"name": "Stonewall Warfare I", // reference to Stonewall Jackson from the U.S. Civil War
+		"uniques": [
+			"[+10]% Strength <when defending>",
+			"[-10]% Strength <when attacking>",
+			"[+10]% Strength <when fighting in [Rough terrain] tiles>",
+			"Only available <for units without [Blitz Warfare I]>"
+			"Only available <for units without [Urban Warfare I]>"
+			"Only available <for units without [Ambush Warfare I]>"
+			"Only available <for units without [Fortress Warfare I]>"
+			"Only available <for units without [Guerilla Warfare I]>"
+		],
+		"unitTypes": ["Infantry","Sniper","Cavalry"],
+		"column": 28,
+        "row": 3
+	},
+	{
+		"name": "Stonewall Warfare II",
+		"prerequisites": ["Stonewall Warfare I"],
+		"uniques": [
+			"[+30]% Strength <when defending>",
+			"[-20]% Strength <when attacking>",
+			"[+20]% Strength <when fighting in [Hill] tiles>",
+			"Only available <for units without [Blitz Warfare I]>"
+			"Only available <for units without [Urban Warfare I]>"
+			"Only available <for units without [Ambush Warfare I]>"
+			"Only available <for units without [Fortress Warfare I]>"
+			"Only available <for units without [Guerilla Warfare I]>"
+		],
+		"unitTypes": ["Infantry","Sniper","Cavalry"],
+		"column": 28,
+        "row": 4
+	},
+	{
+		"name": "Ambush Warfare I",
+		"uniques": [
+			"[+10]% Strength <when attacking>",
+			"[-10]% Strength <when defending>",
+			"Can move after attacking",
+			"Only available <for units without [Blitz Warfare I]>"
+			"Only available <for units without [Urban Warfare I]>"
+			"Only available <for units without [Fortress Warfare I]>"
+			"Only available <for units without [Guerilla Warfare I]>"
+			"Only available <for units without [Stonewall Warfare I]>"
+		],
+		"unitTypes": ["Infantry","Sniper","Cavalry"],
+		"column": 29,
+        "row": 1
+	},
+	{
+		"name": "Ambush Warfare II",
+		"prerequisites": ["Ambush Warfare I"],
+		"uniques": [
+			"Invisible to non-adjacent units"
+			"[+30]% Strength <when attacking>",
+			"[-20]% Strength <when defending>",
+			"[+20]% Strength <when fighting in [Hill] tiles>",
+			"Only available <for units without [Blitz Warfare I]>"
+			"Only available <for units without [Urban Warfare I]>"
+			"Only available <for units without [Fortress Warfare I]>"
+			"Only available <for units without [Guerilla Warfare I]>"
+			"Only available <for units without [Stonewall Warfare I]>"
+		],
+		"unitTypes": ["Infantry","Sniper","Cavalry"],
+		"column": 29,
+        "row": 2
+	},
+	{
+		"name": "Fortress Warfare I",
+		"uniques": [
+			"[+10]% Strength <when fighting in [Trench] tiles>",
+			"[+10]% Strength <when fighting in [Fort] tiles>",
+			"[+10]% Strength <when fighting in [Outpost] tiles>",
+			"[+10]% Strength <when fighting in [Citadel] tiles>",
+			"Only available <for units without [Blitz Warfare I]>"
+			"Only available <for units without [Urban Warfare I]>"
+			"Only available <for units without [Ambush Warfare I]>"
+			"Only available <for units without [Guerilla Warfare I]>"
+			"Only available <for units without [Stonewall Warfare I]>"
+		],
+		"unitTypes": ["Infantry","Sniper","Cavalry"],
+		"column": 29,
+        "row": 3
+	},
+	{
+		"name": "Fortress Warfare II",
+		"prerequisites": ["Fortress Warfare I"],
+		"uniques": [
+			"[+30]% Strength <when fighting in [Trench] tiles>",
+			"[+30]% Strength <when fighting in [Fort] tiles>",
+			"[+30]% Strength <when fighting in [Outpost] tiles>",
+			"[+30]% Strength <when fighting in [Citadel] tiles>",
+			"Only available <for units without [Blitz Warfare I]>"
+			"Only available <for units without [Urban Warfare I]>"
+			"Only available <for units without [Ambush Warfare I]>"
+			"Only available <for units without [Guerilla Warfare I]>"
+			"Only available <for units without [Stonewall Warfare I]>"
+		],
+		"unitTypes": ["Infantry","Sniper","Cavalry"],
+		"column": 29,
+        "row": 4
+	},
+]

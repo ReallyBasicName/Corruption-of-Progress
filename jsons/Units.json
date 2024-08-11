@@ -1,0 +1,1208 @@
+/*******************
+# Notes
+- Units with 'Personnel' unique should have interceptRange defined.
+*******************/
+
+[
+	////////////////////
+	// Base units and player uniques
+	////////////////////
+
+	// Civilian
+
+	//// Civilian Convoy
+	{
+		"name": "Settler",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 106,
+		"uniques": [
+			"Founds a new city <by consuming this unit>",
+			"[+15] HP when healing",
+			"All adjacent units heal [+15] HP when healing",
+			"Excess Food converted to Production when under construction",
+			"Requires at least [2] population"
+		],
+		"hurryCostModifier": 20
+	},
+
+	//// Worker
+	
+	{
+		"name": "Worker",
+		"unitType": "Civilian",
+		"movement": 2,
+		"hurryCostModifier": 20,
+		"upgradesTo": "Motorized Worker",
+		"uniques": [
+			"Can build [Land] improvements on tiles",
+			"Automation is a primary action"
+		],
+		"cost": 70
+	},
+	{
+		"name": "Motorized Worker",
+		"unitType": "Civilian",
+		"requiredTech": "Paratroopers",
+		"movement": 3,
+		"cost": 140,
+		"hurryCostModifier": 20,
+		"upgradesTo": "Mechanized Worker",
+		"uniques": [
+			"Consumes [1] [Oil]",
+			"Only available <if [Factory] is constructed>",
+			"Withdraws before melee combat <with [50]% chance>",
+			"Can build [Land] improvements on tiles",
+			"[-10]% construction time for [All] improvements",
+			"Automation is a primary action"
+		]
+	},
+	{
+		"name": "Mechanized Worker",
+		"unitType": "Civilian",
+		"requiredTech": "Paratroopers",
+		"movement": 4,
+		"cost": 200,
+		"hurryCostModifier": 20,
+		"uniques": [
+			"Consumes [1] [Oil]",
+			"Only available <if [Factory] is constructed>",
+			"Withdraws before melee combat <with [50]% chance>",
+			"Can build [Land] improvements on tiles",
+			"[-25]% construction time for [All] improvements",
+			"Automation is a primary action"
+		]
+	},
+
+	// Missile Defense
+
+
+
+	//// Scout
+	{
+		"name": "Reconnaissance Squad",
+		"unitType": "Scout",
+		"movement": 2,
+		"strength": 12,
+		"cost": 25,
+		"hurryCostModifier": 20,
+		"uniques": [
+			"Low Tech",
+			"[-50]% Strength <vs cities>",
+			"Unable to capture cities"
+		],
+		"promotions": ["Ignore terrain cost"],
+		"attackSound": "nonmetalhit"
+	},
+
+	//// Cavalry
+
+	
+
+	//// Close Range (Infantry)
+	{
+		"name": "Great War Infantry",
+		"unitType": "Close Range",
+		"movement": 2,
+		"strength": 36,
+		"interceptRange": 1,
+		"cost": 55,
+		"requiredTech": "Great War Tech",
+		"uniques": [
+			"Infantry"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "shot"
+	},
+	{
+		"name": "Strider",
+		"uniqueTo": "The Tortured Ones",
+		"unitType": "Close Range",
+		"movement": 2,
+		"strength": 36,
+		"interceptRange": 1,
+		"cost": 1,
+		"requiredTech": "Great War Tech",
+		"uniques": [
+			"Infantry",
+			"Tormented"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "shot"
+	},
+	{
+		"name": "Mangler",
+		"uniqueTo": "The Tortured Ones",
+		"unitType": "Close Range",
+		"movement": 2,
+		"strength": 36,
+		"interceptRange": 1,
+		"cost": 55,
+		"requiredTech": "Great War Tech",
+		"uniques": [
+			"Infantry",
+			"Tormented"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "shot"
+	},
+	{
+		"name": "Sturmtruppen",
+		"uniqueTo": "Deutsches Reich",
+		"unitType": "Close Range",
+		"movement": 2,
+		"strength": 36,
+		"interceptRange": 1,
+		"cost": 55,
+		"requiredTech": "Great War Tech",
+		"uniques": [
+			"Infantry"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "shot"
+	},
+	{
+		"name": "Jäger",
+		"uniqueTo": "Reichsüberreste",
+		"unitType": "Close Range",
+		"movement": 2,
+		"strength": 32,
+		"interceptRange": 1,
+		"cost": 55,
+		"requiredTech": "Great War Tech",
+		"uniques": [
+			"Infantry"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "shot"
+	},
+	{
+		"name": "Marine",
+		"unitType": "Close Range",
+		"movement": 2,
+		"strength": 34,
+		"interceptRange": 1,
+		"cost": 175,
+		"requiredTech": "Great War Tech",
+		"hurryCostModifier": 20,
+		"uniques": [
+			"Infantry",
+			"Only available <if [Armory] is constructed>",
+		],
+		"promotions": [], //"Amphibious"
+		"attackSound": "machinegun"
+	},
+
+	//// Ranged (Infantry)
+	{
+		"name": "Great War Sniper",
+		"unitType": "Ranged",
+		"range": 1,
+		"movement": 2,
+		"strength": 30,
+		"rangedStrength": 25,
+		"interceptRange": 1,
+		"cost": 125,
+		"requiredTech": "Great War Tech",
+		"upgradesTo": "Sniper",
+		"hurryCostModifier": 20,
+		"uniques": [
+			"Infantry",
+		],
+		"promotions": [],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Sniper",
+		"unitType": "Ranged",
+		"upgradesTo": "Elite Sniper",
+		"range": 1,
+		"movement": 2,
+		"strength": 40,
+		"rangedStrength": 35,
+		"interceptRange": 1,
+		"cost": 300,
+		"hurryCostModifier": 20,
+		"requiredTech": "Paratroopers",
+		"uniques": [
+			"Infantry",
+			"Only available <if [Armory] is constructed>",
+			"[-25]% Strength <before discovering [Replaceable Parts]>",
+		],
+		"promotions": [],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Elite Sniper",
+		"unitType": "Ranged",
+		"range": 1,
+		"movement": 2,
+		"strength": 40,
+		"rangedStrength": 35,
+		"interceptRange": 1,
+		"cost": 300,
+		"hurryCostModifier": 20,
+		"requiredTech": "Paratroopers",
+		"uniques": [
+			"Infantry",
+			"Only available <if [Armory] is constructed>",
+			"[-25]% Strength <before discovering [Replaceable Parts]>",
+		],
+		"promotions": [],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Ranger",
+		"unitType": "Ranged",
+		"range": 1,
+		"movement": 2,
+		"strength": 40,
+		"cost": 500,
+		"rangedStrength": 35,
+		"interceptRange": 1,
+		"uniques": [
+			"Infantry",
+			"Great Person - [War]",
+			"Unbuildable",
+		],
+		"promotions": ["Scouting I"],
+		"attackSound": "shot"
+	},
+
+	//// Cavalry
+	
+	{
+		"name": "Great War Cavalry",
+		"unitType": "Cavalry",
+		"movement": 4,
+		"strength": 36,
+		"interceptRange": 1,
+		"cost": 120,
+		"requiredTech": "Great War Tech",
+		"upgradesTo": "Great War Tank",
+		"uniques": [
+			"Personnel",
+			"Cavalry",
+			"No defensive terrain bonus",
+			"Can move after attacking",
+			"[-33]% Strength <vs cities> <when attacking>",
+			"Only available <if [Stable] is constructed>"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "shot"
+	},
+	{
+		"name": "Cossack",
+		"uniqueTo": "White Russia",
+		"replaces": "Great War Cavalry",
+		"unitType": "Cavalry",
+		"movement": 4,
+		"strength": 36,
+		"interceptRange": 1,
+		"cost": 120,
+		"requiredTech": "Great War Tech",
+		"upgradesTo": "Great War Tank",
+		"uniques": [
+			"Personnel",
+			"Cavalry",
+			"No defensive terrain bonus",
+			"Can move after attacking",
+			"[-33]% Strength <vs cities> <when attacking>",
+			"Only available <if [Stable] is constructed>"
+			],
+		"promotions": ["[Cossack] ability"],
+		"hurryCostModifier": 20,
+		"attackSound": "shot"
+	},
+	{
+		"name": "Light Cavalry",
+		"unitType": "Cavalry",
+		"range": 1,
+		"movement": 4,
+		"strength": 30,
+		"rangedStrength": 24,
+		"interceptRange": 1,
+		"cost": 115,
+		"requiredTech": "Great War Tech",
+		"uniques": [
+			"Personnel",
+			"Cavalry",
+			"No defensive terrain bonus",
+			"Can move after attacking",
+			"[-33]% Strength <vs cities> <when attacking>",
+			"Only available <if [Stable] is constructed>"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "shot"
+	},
+    //Paradrop
+	{
+		"name": "Paratrooper",
+		"unitType": "Close Range",
+		"movement": 2,
+		"strength": 40,
+		"cost": 150,
+		"requiredTech": "Paratroopers",
+		"upgradesTo": "Special Forces",
+		"uniques": [
+		    "Personnel",
+			"May Paradrop up to [4] tiles from inside friendly territory",
+			"Never appears as a Barbarian unit"
+			],
+		"promotions": ["Scouting I"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Special Forces",
+		"unitType": "Close Range",
+		"movement": 2,
+		"strength": 44,
+		"cost": 200,
+		"requiredTech": "Atomic Tech",
+		"uniques": [
+		    "Personnel",
+			"No movement cost to pillage",
+			"May Paradrop up to [8] tiles from inside friendly territory",
+			"Only available <if [Factory] is constructed>"
+			],
+		"promotions": ["Scouting I","Scouting II"],
+		"attackSound": "shot"
+	},
+
+	// Siege
+	{
+		"name": "Anti-Mech Gun",
+		"unitType": "Siege",
+		"range": 1,
+		"movement": 2,
+		"strength": 25,
+		"rangedStrength": 30,
+		"cost": 150,
+		"uniques": [
+			"[+200]% Strength <vs [Armor] units>",
+			"Only available <if [Factory] is constructed>",
+			"Never appears as a Barbarian unit"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Great War Artillery",
+		"unitType": "Siege",
+		"range": 3,
+		"movement": 2,
+		"strength": 25,
+		"rangedStrength": 30,
+		"cost": 185,
+		"requiredTech": "Great War Tech",
+		"uniques": [
+			"[+100]% Strength <vs cities> <when attacking>",
+			"No defensive terrain bonus",
+			"[-50]% Strength <vs [Helicopter] units>",
+			"Must set up to ranged attack",
+			"[-1] Sight",
+			"Only available <if [Factory] is constructed>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [],
+		"hurryCostModifier": 20,
+		"attackSound": "artillery"
+	},
+	{
+		"name": "Machine Gun",
+		"unitType": "Siege",
+		"range": 2,
+		"movement": 2,
+		"strength": 50,
+		"rangedStrength": 50,
+		"cost": 150,
+		"requiredTech": "Great War Tech",
+		"uniques": [
+			"Must set up to ranged attack",
+			"[-33]% Strength <vs [Armor] units>",
+			"[-50]% Strength <vs cities> <when attacking>",
+			"Only available <if [Factory] is constructed>",
+			"Never appears as a Barbarian unit"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Anti-Aircraft Gun",
+		"unitType": "Siege",
+		"movement": 2,
+		"strength": 30,
+		"rangedStrength": 50,
+		"range": 2,
+		"interceptRange": 2,
+		"cost": 185,
+		"requiredTech": "Great War Tech",
+		"uniques": [
+			"[75]% chance to intercept air attacks",
+			"[+50]% Strength <vs [Air] units>",
+			"[+100]% Strength <vs [Helicopter] units>",
+			"[-33]% Strength <vs [Armor] units>",
+			"[-50]% Strength <vs cities> <when attacking>",
+			"Must set up to ranged attack",
+			"Only available <if [Factory] is constructed>",
+			"Never appears as a Barbarian unit"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "machinegun"
+	},
+
+	// Armor
+		//Tank
+	
+	{
+		"name": "Great War Tank",
+		"unitType": "Armor",
+		"movement": 4,
+		"strength": 60,
+		"cost": 225,
+		"requiredTech": "Early Mechanization",
+		"upgradesTo": "Advanced Tank",
+		"uniques": [,
+			"Consumes [1] [Oil]",
+			"Can move after attacking",
+			"No defensive terrain bonus",
+			"Never appears as a Barbarian unit"
+			"[-25]% Strength <vs cities> <when attacking>",
+			"Only available <if [Factory] is constructed>"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Advanced Tank",
+		"unitType": "Armor",
+		"movement": 5,
+		"strength": 80,
+		"cost": 375,
+		"requiredTech": "Paratroopers",
+		"upgradesTo": "Mechanized Tank",
+		"uniques": [
+			"Consumes [1] [Oil]",
+			"Can move after attacking",
+			"Never appears as a Barbarian unit"
+			"No defensive terrain bonus",
+			"[-25]% Strength <vs cities> <when attacking>",
+			"Only available <if [Factory] is constructed>",
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Mechanized Tank",
+		"unitType": "Armor",
+		"movement": 5,
+		"strength": 90,
+		"cost": 425,
+		"requiredTech": "Atomic Tech",
+		"uniques": [
+			"Consumes [2] [Oil]",
+			"Can move after attacking",
+			"No defensive terrain bonus",
+			"Never appears as a Barbarian unit"
+			"[-25]% Strength <vs cities> <when attacking>",
+			"Only available <if [Automated Factory] is constructed>",
+		],
+		"promotions": [],
+		"hurryCostModifier": 20,
+		"attackSound": "gdrAttack"
+	},
+	{
+		"name": "Super-Heavy Mechanized Tank",
+		"unitType": "Armor",
+		"movement": 2,
+		"strength": 150,
+		"cost": 750,
+		"requiredTech": "Atomic Tech",
+		"uniques": [
+			"Consumes [2] [Oil]",
+			"Consumes [1] [Coolant]",
+			"Consumes [2] [Potenium]",
+			"Can move after attacking",
+			"No defensive terrain bonus",
+			"Can carry [+2] [Fighter] units",
+			"Can carry [+1] [Bomber] units",
+			"Never appears as a Barbarian unit"
+			"[-25]% Strength <vs cities> <when attacking>",
+			"Only available <if [Automated Factory] is constructed>"
+		],
+		"promotions": [],
+		"hurryCostModifier": 20,
+		"attackSound": "gdrAttack"
+	},
+		//Motorized
+	{
+		"name": "Motorized Infantry",
+		"unitType": "Armor",
+		"movement": 5,
+		"strength": 75,
+		"cost": 250,
+		"requiredTech": "Early Mechanization",
+		"uniques": [
+			"Consumes [1] [Oil]",
+			"Cannot attack",
+			"No defensive terrain bonus",
+			"Never appears as a Barbarian unit",
+			"Only available <if [Factory] is constructed>"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "machinegun"
+	},
+		//Cars
+	{
+		"name": "Great War Armored Car",
+		"unitType": "Armor",
+		"movement": 5,
+		"strength": 60,
+		"cost": 225,
+		"requiredTech": "Early Mechanization",
+		"uniques": [
+			"Consumes [1] [Oil]",
+			"Can move after attacking",
+			"No defensive terrain bonus",
+			"Never appears as a Barbarian unit",
+			"Only available <if [Factory] is constructed>"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "machinegun"
+	},
+
+	// Mechs
+	
+	{
+		"name": "Chicken Mech",
+		"unitType": "Armor",
+		"movement": 2,
+		"strength": 40,
+		"cost": 65,
+		"requiredTech": "Mechanization",
+		"uniques": [
+			"Mech"
+			"Never appears as a Barbarian unit"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "shot"
+	},
+	{
+		"name": "Walking Giant",
+		"unitType": "Armor",
+		"movement": 4,
+		"strength": 120,
+		"cost": 600,
+		"requiredTech": "Mechanization",
+		"uniques": [
+			"Consumes [2] [Oil]",
+			"Consumes [1] [Coolant]",
+			"Consumes [1] [Potenium]",
+			"Mech",
+			"No defensive terrain bonus",
+			"Never appears as a Barbarian unit",
+			"Only available <if [Factory] is constructed>"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "tankshot"
+	},
+	
+	// Self-propelled artillery
+	
+	{
+		"name": "Rocket Mech-Artillery",
+		"unitType": "Siege",
+		"movement": 3,
+		"strength": 25,
+		"rangedStrength": 40,
+		"range": 3,
+		"cost": 350,
+		"requiredTech": "Paratroopers",
+		"uniques": [
+			"[+100]% Strength <vs cities> <when attacking>",
+			"No defensive terrain bonus",
+			"[-50]% Strength <vs [Helicopter] units>",
+			"[-1] Sight",
+			"Withdraws before melee combat <with [25]% chance>",
+			"Only available <if [Factory] is constructed>",
+			"Can carry [1] [Missile] units",
+			"Consumes [1] [Oil]",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [],
+		"hurryCostModifier": 20,
+		"attackSound": "artillery"
+	},
+	{
+		"name": "Missile Mech",
+		"unitType": "Siege",
+		"range": 2,
+		"movement": 5,
+		"strength": 35,
+		"rangedStrength": 40,
+		"cost": 325,
+		"requiredTech": "Atomic Tech",
+		"uniques": [
+			"Can move after attacking",
+			"No defensive terrain bonus",
+			"[+150]% Strength <vs [Armor] units>",
+			"Withdraws before melee combat <with [50]% chance>",
+			"Only available <if [Factory] is constructed>",
+			"Consumes [1] [Oil]",
+			"Never appears as a Barbarian unit"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "missile"
+	},
+	{
+		"name": "Mobile SAM",
+		"unitType": "Siege",
+		"movement": 3,
+		"strength": 35,
+		"rangedStrength": 50,
+		"range": 2,
+		"interceptRange": 3,
+		"cost": 375,
+		"requiredTech": "Atomic Tech",
+		"uniques": [
+			"[100]% chance to intercept air attacks",
+			"[+200]% Strength <vs [Air] units>",
+			"[+200]% Strength <vs [Helicopter] units>",
+			"No defensive terrain bonus",
+			"Withdraws before melee combat <with [25]% chance>",
+			"Only available <if [Factory] is constructed>",
+			"Consumes [1] [Oil]",
+			"Never appears as a Barbarian unit"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "missile"
+	},
+
+	// Zeppelin
+	{
+		"name": "Zeppelin",
+		"unitType": "Zeppelin",
+		"range": 1,
+		"interceptRange": 1,
+		"movement": 4,
+		"strength": 15,
+		"rangedStrength": 20,
+		"cost": 110,
+		"requiredTech": "Great War Tech",
+		"uniques": [
+			"[-25]% Strength <vs [Armor] units>",
+			"Withdraws before melee combat <with [25]% chance>",
+			"Can move after attacking",
+			"[-25]% Strength <vs cities> <when attacking>",
+			"Withdraws before melee combat <with [25]% chance>",
+			"Never appears as a Barbarian unit"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "shot"
+	},
+
+	// Air
+
+	//// Fighter
+	{
+		"name": "Great War Fighter",
+		"unitType": "Fighter",
+		"movement": 1,
+		"strength": 45,
+		"rangedStrength": 50,
+		"range": 8,
+		"interceptRange": 8,
+		"cost": 185,
+		"requiredTech": "Great War Tech",
+		"hurryCostModifier": 20,
+		"uniques": [
+			"[100]% chance to intercept air attacks",
+			"Cannot intercept [Stealth] units",
+			"[+100]% Strength <vs [Bomber] units>",
+			"Only available <if [Factory] is constructed>",
+			"Consumes [1] [Oil]"
+		],
+		"attackSound": "machinegun"
+	},
+
+	//// Bomber
+	{
+		"name": "Great War Bomber",
+		"unitType": "Bomber",
+		"movement": 1,
+		"strength": 35,
+		"rangedStrength": 55,
+		"range": 10,
+		"cost": 185,
+		"requiredTech": "Great War Tech",
+		"upgradesTo": "Heavy Bomber",
+		"uniques": [
+			"Only available <if [Factory] is constructed>",
+			"Consumes [1] [Oil]"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "bombing"
+	},
+	{
+		"name": "Heavy Bomber",
+		"unitType": "Bomber",
+		"movement": 1,
+		"strength": 50,
+		"rangedStrength": 65,
+		"range": 15,
+		"cost": 400,
+		"requiredTech": "Paratroopers",
+		"hurryCostModifier": 20,
+		"uniques": [
+			"Only available <if [Aerospace Facility] is constructed>",
+			"Consumes [1] [Oil]"
+		],
+		"attackSound": "bombing"
+	},
+
+	// Water
+
+	//// Melee Water
+	{
+		"name": "Patrol Boat",
+		"unitType": "Melee Water",
+		"movement": 4,
+		"strength": 30,
+		"cost": 90,
+		"requiredTech": "Great War Tech",
+		"uniques": [
+			"Can carry [+2] [Close Range] units",
+			"Double movement in [Coast]",
+			"Withdraws before melee combat <with [33]% chance>",
+			"Consumes [1] [Oil]"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "shipguns"
+	},
+	{
+		"name": "Corvette",
+		"unitType": "Melee Water",
+		"movement": 5,
+		"strength": 40,
+		"cost": 100,
+		"requiredTech": "Great War Tech",
+		"uniques": [
+			"Consumes [1] [Oil]",
+			"Double movement in [Coast]",
+			"Withdraws before melee combat <with [66]% chance>",
+			"[+25]% Strength <when defending>",
+			"Only available <if [Factory] is constructed>"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "shipguns"
+	},
+	{
+		"name": "Corvette",
+		"unitType": "Melee Water",
+		"movement": 5,
+		"strength": 40,
+		"cost": 100,
+		"requiredTech": "Great War Tech",
+		"uniques": [
+			"Consumes [1] [Oil]",
+			"Double movement in [Coast]",
+			"Withdraws before melee combat <with [66]% chance>",
+			"[+25]% Strength <when defending>",
+			"Only available <if [Factory] is constructed>"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "shipguns"
+	},
+	{
+		"name": "Dreadnought",
+		"unitType": "Ranged Water",
+		"movement": 5,
+		"strength": 45,
+		"rangedStrength": 65,
+		"range": 3,
+		"interceptRange": 3,
+		"cost": 400,
+		"requiredTech": "Naval Mechanization",
+		"uniques": [
+			"[+25]% Strength <vs cities>",
+			"Only available <if [Factory] is constructed>",
+			"Consumes [1] [Oil]",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [],
+		"hurryCostModifier": 20,
+		"attackSound": "shipguns"
+	},
+
+	//// Ranged Water
+	{
+		"name": "Destroyer",
+		"unitType": "Ranged Water",
+		"movement": 6,
+		"strength": 35,
+		"rangedStrength": 55,
+		"range": 2,
+		"interceptRange": 2,
+		"cost": 300,
+		"requiredTech": "Great War Tech",
+		"uniques": [
+			"Can see invisible [Submarine] units",
+			"[50]% chance to intercept air attacks",
+			"[+100]% Strength <vs [Air] units>",
+			"[+66]% Strength <vs [Submarine] units>",
+			"[+100]% Strength <vs [Helicopter] units>",
+			"Withdraws before melee combat <with [33]% chance>",
+			"Only available <if [Factory] is constructed>",
+			"Consumes [1] [Oil]",
+			"Never appears as a Barbarian unit"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "shipguns"
+	},
+	{
+		"name": "Battleship",
+		"unitType": "Ranged Water",
+		"movement": 5,
+		"strength": 45,
+		"rangedStrength": 65,
+		"range": 3,
+		"interceptRange": 3,
+		"cost": 400,
+		"requiredTech": "Great War Tech",
+		"uniques": [
+			"[+25]% Strength <vs cities>",
+			"Only available <if [Factory] is constructed>",
+			"Consumes [1] [Oil]",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [],
+		"hurryCostModifier": 20,
+		"attackSound": "shipguns"
+	},
+
+	//// Others (Carrier, Submarine)
+	{
+		"name": "Carrier",
+		"unitType": "Aircraft Carrier",
+		"movement": 5,
+		"strength": 35,
+		"rangedStrength": 40,
+		"range": 2,
+		"interceptRange": 2,
+		"cost": 400,
+		"requiredTech": "Paratroopers",
+		"upgradesTo": "Heavy Carrier",
+		"uniques": [
+			"Can carry [2] [Aircraft] units",
+			"Only available <if [Factory] is constructed>",
+			"Consumes [1] [Oil]",
+			"Never appears as a Barbarian unit"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "shipguns"
+	},
+	{
+		"name": "Heavy Carrier",
+		"unitType": "Aircraft Carrier",
+		"movement": 5,
+		"strength": 50,
+		"rangedStrength": 60,
+		"range": 2,
+		"interceptRange": 2,
+		"cost": 500,
+		"requiredTech": "Atomic Tech",
+		"uniques": [
+			"Can carry [3] [Air] units",
+			"Only available <if [Factory] is constructed>",
+			"Never appears as a Barbarian unit"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "shipguns"
+	},
+	{
+		"name": "Submarine",
+		"unitType": "Submarine",
+		"movement": 5,
+		"strength": 30,
+		"rangedStrength": 60,
+		"cost": 300,
+		"requiredTech": "Great War Tech",
+		"uniques": [
+			"[+66]% Strength <when attacking>",
+			"[+33]% Strength <vs [Ranged Water] units> <when defending>",
+			"Can only attack [Water] tiles",
+			"Only available <if [Factory] is constructed>",
+			"Consumes [1] [Oil]",
+			"Never appears as a Barbarian unit"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "torpedo"
+	},
+
+	// Faith-purchasable civilian
+
+	//// Religious
+	{
+		"name": "Missionary",
+		"unitType": "Civilian",
+		"uniques": [
+            "Can Spread Religion <for [4] movement> <[2] times> <after which this unit is consumed>",
+            "May enter foreign tiles without open borders, but loses [250] religious strength each turn it ends there",
+			"Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]",
+			"[-1] Sight", 
+			"Unbuildable",
+			"Religious Unit", 
+			"Hidden when religion is disabled"],
+		"movement": 4,
+		"religiousStrength": 1000
+	},
+	{
+		"name": "Inquisitor",
+		"unitType": "Civilian",
+		"uniques": ["Prevents spreading of religion to the city it is next to",
+			"Can remove other religions from cities <in [Friendly] tiles> <once> <after which this unit is consumed>",
+            "Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]",
+			"[+1] Sight", 
+			"Hidden when religion is disabled", 
+			"Unbuildable", 
+			"Religious Unit"
+		],
+		"movement": 3
+	},
+
+
+	//// Great People
+	{
+		"name": "Great Artist",
+		"unitType": "Civilian",
+		"uniques": [
+			"Empire enters a [8]-turn Golden Age <by consuming this unit>",
+			"Can instantly construct a [Settlement] improvement <by consuming this unit>",
+			"Great Person - [Culture]",
+			"Unbuildable",
+			"Uncapturable"
+		],
+		"movement": 2
+	},
+	{
+		"name": "Great Prophet",
+		"unitType": "Civilian",
+		"uniques": [
+			"Can instantly construct a [Seminary] improvement <by consuming this unit> <if it hasn't used other actions yet>",
+			"Can Spread Religion <for [2] movement> <[4] times> <after which this unit is consumed>",
+			"Removes other religions when spreading religion",
+			"May found a religion <by consuming this unit> <if it hasn't used other actions yet>",
+            "May enhance a religion <by consuming this unit> <if it hasn't used other actions yet>",
+			"May enter foreign tiles without open borders",
+			"[-1] Sight",
+			"Great Person - [Faith]",
+			"Unbuildable",
+			"Uncapturable",
+			"Religious Unit",
+			"Hidden when religion is disabled",
+			"Takes your religion over the one in their birth city"
+		],
+		"movement": 2,
+		"religiousStrength": 1000
+	},
+	{
+		"name": "Great Scientist",
+		"unitType": "Civilian",
+		"uniques": [
+			"Can hurry technology research",
+			"Can instantly construct a [Academy] improvement <by consuming this unit>",
+			"Great Person - [Science]",
+			"Unbuildable",
+			"Uncapturable"
+		],
+		"movement": 2
+	},
+	{
+		"name": "Great Merchant",
+		"unitType": "Civilian",
+		"uniques": [
+			"Can undertake a trade mission with City-State, giving a large sum of gold and [30] Influence",
+			"Can instantly construct a [Settlement] improvement <by consuming this unit>",
+			"Great Person - [Gold]",
+			"Unbuildable",
+			"Uncapturable"
+		],
+		"movement": 2
+	},
+	{
+		"name": "Great Engineer",
+		"unitType": "Civilian",
+		"uniques": [
+			"Can speed up construction of a building",
+			"Can instantly construct a [Manufactory] improvement <by consuming this unit>",
+			"Great Person - [Production]",
+			"Unbuildable",
+			"Uncapturable"
+		],
+		"movement": 2
+	},
+	{
+		"name": "Great General",
+		"unitType": "Civilian",
+		"uniques": [
+			"Empire enters a [8]-turn Golden Age <by consuming this unit>",
+			"[+15]% Strength bonus for [Military] units within [2] tiles",
+			"Can instantly construct a [Citadel] improvement <by consuming this unit>",
+			"Great Person - [War]",
+			"Unbuildable",
+			"Uncapturable"
+		],
+		"movement": 2
+	},
+	{
+		"name": "Great Farmer",
+		"unitType": "Civilian",
+		"uniques": [
+			"[+1] population [in all cities] <by consuming this unit>",
+			"Can instantly construct a [Factory farm] improvement <by consuming this unit>",
+			"Great Person - [Food]",
+			"Uncapturable",
+			"Unbuildable"
+		],
+		"movement": 2
+	},
+
+	////////////////////
+	// Non-player uniques
+	////////////////////
+
+	// Partisans
+
+	// City-states
+	{
+		"name": "National Guard",
+		"unitType": "Close Range",
+		"movement": 2,
+		"strength": 36,
+		"interceptRange": 1,
+		"cost": 50,
+		"hurryCostModifier": 20,
+		"uniques": [
+			"[+20]% Strength decreasing with distance from the capital",
+			"[+10]% Strength <when fighting in [Friendly Land] tiles>",
+			"Only available <for [City-States]>",
+			"Never appears as a Barbarian unit",
+			"Limited to [4] per Civilization"],
+		"attackSound": "Shot"
+	},
+	{
+		"name": "Praetorian Guard",
+		"uniqueTo": "Nova Roma",
+		"replaces": "National Guard"
+		"unitType": "Close Range",
+		"movement": 2,
+		"strength": 36,
+		"interceptRange": 1,
+		"cost": 50,
+		"hurryCostModifier": 20,
+		"uniques": [
+			"[+30]% Strength decreasing with distance from the capital",
+			"[+10]% Strength <when fighting in [Friendly Land] tiles>",
+			"Only available <for [City-States]>",
+			"Never appears as a Barbarian unit",
+			"Limited to [5] per Civilization"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Legion",
+		"uniqueTo": "Nova Roma",
+		"replaces": "Great War Infantry"
+		"unitType": "Close Range",
+		"movement": 2,
+		"strength": 36,
+		"interceptRange": 1,
+		"cost": 55,
+		"requiredTech": "Great War Tech",
+		"uniques": ["Personnel"],
+		"hurryCostModifier": 20,
+		"attackSound": "shot"
+	},
+	{
+		"name": "Howitzer",
+		"unitType": "Siege",
+		"uniqueTo": "",
+		"movement": 2,
+		"strength": 25,
+		"rangedStrength": 30,
+		"range": 3,
+		"cost": 55,
+		"requiredTech": "Great War Tech",
+		"uniques": [
+			"[+100]% Strength <vs cities> <when attacking>",
+			"No defensive terrain bonus",
+			"[-50]% Strength <vs [Helicopter] units>",
+			"Must set up to ranged attack",
+			"[-1] Sight",
+			"Only available <if [Factory] is constructed>"
+		],
+		"promotions": [],
+		"hurryCostModifier": 20,
+		"attackSound": "artillery"
+	},
+	{
+		"name": "Repurposed Bomber",
+		"unitType": "Bomber",
+		"uniqueTo": "Partisan's Nation",
+		"replaces": "Great War Bomber",
+		"movement": 1,
+		"strength": 25,
+		"rangedStrength": 50,
+		"range": 7,
+		"cost": 185,
+		"requiredTech": "Great War Tech",
+		"upgradesTo": "Heavy Bomber",
+		"uniques": [
+			"Consumes [1] [Oil]"
+		],
+		"hurryCostModifier": 20,
+		"attackSound": "shot"
+	},
+	
+
+	//Spaceship parts
+	/*{
+		"name": "SS Booster",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 750,
+		"requiredTech": "Atomic Tech",
+		"requiredResource": "Aluminum",
+		"uniques": ["Spaceship part", "Cannot be purchased", "Only available <if [Apollo Program] is constructed>", "Uncapturable", "Can be added to [The Spaceship] in the Capital", "Limited to [3] per Civilization"]
+		// costs 1500 in BNW
+	},
+	{
+		"name": "SS Cockpit",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 750,
+		"requiredTech": "Atomic Tech",
+		"requiredResource": "Aluminum",
+		"uniques": ["Spaceship part", "Cannot be purchased", "Only available <if [Apollo Program] is constructed>", "Uncapturable", "Can be added to [The Spaceship] in the Capital", "Limited to [1] per Civilization"]
+		// costs 1500 in BNW
+	},
+	{
+		"name": "SS Engine",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 750,
+		"requiredTech": "Atomic Tech",
+		"requiredResource": "Aluminum",
+		"uniques": ["Spaceship part", "Cannot be purchased", "Only available <if [Apollo Program] is constructed>", "Uncapturable", "Can be added to [The Spaceship] in the Capital", "Limited to [1] per Civilization"]
+		// costs 1500 in BNW
+	},
+	{
+		"name": "SS Stasis Chamber",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 750,
+		"requiredTech": "Atomic Tech",
+		"requiredResource": "Aluminum",
+		"uniques": ["Spaceship part", "Cannot be purchased", "Only available <if [Apollo Program] is constructed>", "Uncapturable", "Can be added to [The Spaceship] in the Capital", "Limited to [1] per Civilization"]
+		// costs 1500 in BNW
+	}*/
+]

@@ -1,0 +1,901 @@
+[
+	// Will add reference notes, so I don't repeat references
+	// Spectator
+	{
+		"name": "Spectator",
+		"outerColor": [255, 255, 255]
+		// "innerColor": [255, 255, 255]
+	},
+
+	//Nations to Add Later
+	
+	//Europe
+	
+	//Regno d'Italia-Diplomatic
+	//France-Cultural
+	//Hungary-Diplomatic
+	//Bulgaria-Domination
+	//Latvia-Diplomatic?
+	//Estonia-Diplomatic?
+	//Lituania-Cultural?
+	//Valkyrie PMC-Domination
+	//The League of Nations-Diplomatic "May not annex cities"
+	
+	//Asia
+	
+	//Chinese Warlords? Domination-Diplomatic-Cultural Warlords? Needs further research
+	//Tibet-Religious
+	//India-Domination
+	//Ottomans-Religious
+	
+	//North America
+	
+	//Mexico-Diplomatic
+	
+	//South America
+	
+	//Gran Colombia-Domination?
+	
+	//Africa? Weren't many free african countries
+	
+	//Free Afrika-
+	//Liberia?
+	//South Africa-
+	//Maybe Angola, Transvaal, Morocco, or Tripolitania
+	
+	//Oceania
+	
+	//ANZAC-Diplomatic/Replaces Australia
+	
+	//Other
+	
+	//Omega Institute-Scientific
+	
+	//Added Nations
+	
+	//Europe
+	
+	{
+		"name": "Deutsches Reich",
+		"leaderName": "Adolf Hitler",
+		"adjective": ["Nazi"],
+		"startBias": [],
+		"preferredVictorType": "Domination",
+
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"defeated": "",
+		"attacked": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		"tradeRequest": "",
+		
+		"outerColor": [40,40,40],
+		"innerColor": [118,0,0],
+		"style": "Nz",
+		"uniqueName": "Blitzkrieg",
+		"uniques": [
+		],
+		"cities": [
+			"Berlin",
+			"Hamburg",
+			"Leipzig",
+			"Dresden",
+			"Brandenburg",
+			"Breslau"
+			"Magdeburg",
+			"Posen",
+			"Gleiwitz",
+			"Rostock"
+			"Chemnitz",
+			"Haale",
+			"Kiel",
+			"Köslin",
+			"Bromberg"]
+        "spyNames": ["Dasch", "Marlene", "Lilly", "Grimpel", "Guenther", "Dr Griebl", "Hermann", "Guellich", "Josef", "Duquesne"]
+    },
+	{
+		"name": "Breizh",
+		"leaderName": "Loeiz Ar Rouz",
+		"adjective": [""],
+		"startBias": [],
+		"preferredVictorType": "Cultural",
+
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"defeated": "",
+		"attacked": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		"tradeRequest": "",
+		
+		"outerColor": [255,255,255],
+		"innerColor": [0,0,0],
+		"style": "TBD",
+		"uniqueName": "TBD",
+		"uniques": [
+		],
+		"cities": [
+			"Naoned",
+			"",
+			"",
+			"",
+			""
+			"",
+			"",
+			"",
+			"",
+			""
+			"",
+			"",
+			"",
+			"",
+			""]
+		"spyNames": ["Dasch", "Marlene", "Lilly", "Grimpel", "Guenther", "Dr Griebl", "Hermann", "Guellich", "Josef", "Duquesne"]
+    },
+	{
+		"name": "White Russia",
+		"leaderName": "The Military Council",
+		"adjective": ["White Russian"],
+		"startBias": ["Tundra"],
+		"preferredVictorType": "Domination",
+
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"defeated": "",
+		"attacked": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		"tradeRequest": "",
+		
+		"outerColor": [255,255,255],
+		"innerColor": [20,95,203],
+		"style": "Rus",
+		"uniqueName": "White Terror",
+		"uniques": [
+		],
+		"cities": [
+			"Saint Petersburg",
+			"",
+			"",
+			"",
+			""
+			"",
+			"",
+			"",
+			"",
+			""
+			"",
+			"",
+			"",
+			"",
+			""]
+        "spyNames": ["Alexei", "Grigori", "Pyotr", "Anastasia", "Tatiana", "Boris", "Doktor Seriy", "Mikhail", "Natacha", "Zmeya"]
+    },
+	{
+		"name": "Red Russia",
+		"leaderName": "Vladimir Lenin",
+		"adjective": ["Red Russian"],
+		"startBias": ["Tundra"],
+		"preferredVictorType": "Domination",
+
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"defeated": "",
+		"attacked": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		"tradeRequest": "",
+		
+		"outerColor": [216,0,0],
+		"innerColor": [240,187,38],
+		"style": "Rus",
+		"uniqueName": "Red Terror",
+		"uniques": [
+		],
+		"cities": [
+			"Moscow",
+			"",
+			"",
+			"",
+			""
+			"",
+			"",
+			"",
+			"",
+			""
+			"",
+			"",
+			"",
+			"",
+			""]
+        "spyNames": ["Nikolai", "Reznov", "Dmitry", "Chernov", "Viktor", "Markhov", "Daletski", "Letlev", "Polubencev", "Voronin"]
+    },
+	{
+		"name": "Oceania",
+		"leaderName": "",
+		"adjective": [""],
+		"startBias": ["Coast"],
+		"preferredVictorType": "Diplomatic",
+
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"defeated": "",
+		"attacked": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		"tradeRequest": "",
+		
+		"outerColor": [0,0,0],
+		"innerColor": [255,255,255],
+		"style": "TBD",
+		"uniqueName": "TBD",
+		"uniques": [
+		],
+		"cities": [
+			"London",
+			"",
+			"",
+			"",
+			""
+			"",
+			"",
+			"",
+			"",
+			""
+			"",
+			"",
+			"",
+			"",
+			""]
+        "spyNames": ["James", "Scarlett", "Mycroft", "Charlotte", "Gwendolyn", "Mr. Eks", "Dr. Grey", "Andrew", "Scott", "Anne"]
+    },
+	{
+		"name": "Kaiserlicher Volksstaat",
+		"leaderName": "",
+		"adjective": ["Kaiserlicher"],
+		"startBias": [],
+		"preferredVictorType": "",
+
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"defeated": "",
+		"attacked": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		"tradeRequest": "",
+		
+		"outerColor": [179,178,184],
+		"innerColor": [37,43,33],
+		"style": "German",
+		"uniqueName": "Das Vaterland",
+		"uniques": [
+		],
+		"cities": [
+			"Cologne",
+			"Frankfurt",
+			"Essen",
+			"Nuremburg"
+			"Dortmund",
+			"Regensburg"
+			"Düsseldorf",
+			"Bremen",
+			"Hanover",
+			"Duisburg",
+			"Bonn"
+			"Bochum",
+			"Bielefeld",
+			"Karlsruhe",
+			"Gelenskirchen",]
+        "spyNames": ["Johann", "Marlene", "Wilhelm", "Eva", "Heinz", "Horst", "Carl", "Viper", "Albrecht", "Anton"]
+    }, 
+	
+	//North America
+	
+	{
+		"name": "American Union",
+		"leaderName": "President ",
+		"adjective": ["American"],
+		"startBias": [],
+		"preferredVictorType": "",
+
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"defeated": "",
+		"attacked": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		"tradeRequest": "",
+		
+		"outerColor": [28,51,119],
+        "innerColor": [255,255,255],
+		"style": "US",
+		"uniqueName": "Last Bastion of Liberty",
+		"uniques": [
+		],
+		"cities": [
+			"Washington D.C.",
+			"",
+			"",
+			"",
+			""
+			"",
+			"",
+			"",
+			"",
+			""
+			"",
+			"",
+			"",
+			"",
+			""]
+        "spyNames": ["Cousin", "Felix", "Dennis", "Edward", "Prof. Rex", "Eliza", "Mary", "Virginia", "Scarlett", "Barbara"]
+    },
+	{
+		"name": "California Republic",
+		"leaderName": "Henry Williams",
+		"adjective": ["Californian"],
+		"startBias": ["Coast"],
+		"preferredVictorType": "",
+
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"defeated": "",
+		"attacked": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		"tradeRequest": "",
+		
+		"outerColor": [255,255,255],
+		"innerColor": [184,10,49],
+		"style": "American",
+		"uniqueName": "The Sleeping Bear",
+		"uniques": [
+		],
+		"cities": [
+			"Sacramento",
+			"San Francisco",
+			"Los Angeles",
+			"San Diego",
+			"San Jose",
+			"Fresno",
+			"Monterey",
+			"Eureka",
+			"Long Beach",
+			"Oakland",
+			"Anaheim",
+			"Fremont",
+			"Bakersfield",
+			"Modesto",
+			"Riverside"]
+        "spyNames": ["Forty-Niner", "Yosemite", "Sequoia", "Joshua", "Rosa", "Jacinto", "Berryessa", "Mojave", "Gabriel", "Muir"]
+    },
+	{
+		"name": "Canadian Commonwealth",
+		"leaderName": "",
+		"adjective": [""],
+		"startBias": [],
+		"preferredVictorType": "",
+
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"defeated": "",
+		"attacked": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		"tradeRequest": "",
+		
+		"outerColor": [0,0,0],
+		"innerColor": [255,255,255],
+		"style": "TBD",
+		"uniqueName": "TBD",
+		"uniques": [
+		],
+		"cities": [
+			"",
+			"",
+			"",
+			"",
+			""
+			"",
+			"",
+			"",
+			"",
+			""
+			"",
+			"",
+			"",
+			"",
+			""]
+		"spyNames": ["Intrepid","Dudley","Hugo","Igor Gouzenko","Archie","Guy","Terrance","Jim","Bill","Fadden",]
+    },
+	{
+		"name": "Black Rock Corporation",
+		"leaderName": "",
+		"adjective": [""],
+		"startBias": ["Hill"],
+		"preferredVictorType": "",
+
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"defeated": "",
+		"attacked": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		"tradeRequest": "",
+		
+		"outerColor": [0,0,0],
+		"innerColor": [255,255,255],
+		"style": "TBD",
+		"uniqueName": "TBD",
+		"uniques": [
+		],
+		"cities": [
+			"Black Rock HQ",
+			"District 01",
+			"District 02",
+			"District 03",
+			"District 04"
+			"District 05",
+			"District 06",
+			"District 07",
+			"District 08",
+			"District 09"
+			"District 10",
+			"District 11",
+			"District 12",
+			"District 13",
+			"District 14"]
+        "spyNames": ["Agent 001", "Agent 002", "Agent 003", "Agent 004", "Agent 005", "Agent 006", "Agent 007", "Agent 008", "Agent 009", "Agent 010"]
+    },
+	//South America
+	{
+		"name": "Brazil",
+		"leaderName": "Getúlio Vargas",
+		"adjective": [],
+		"startBias": [""],
+		"preferredVictorType": "",
+
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"defeated": "",
+		"attacked": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		"tradeRequest": "",
+		
+		"outerColor": [0,0,0],
+		"innerColor": [255,255,255],
+		"style": "TBD",
+		"uniqueName": "Estado Novo",
+		"uniques": [
+		],
+		"cities": [
+			"Rio de Janeiro",
+			"São Paulo",
+			"Recife",
+			"Salvador",
+			"Porto Alegre"
+			"Belo Horizonte",
+			"Belém",
+			"Campos dos Goytacazes",
+			"Santos",
+			"Curitiba"
+			"Fortaleza",
+			"Niterói",
+			"Campinas",
+			"Juiz de Fora",
+			"Itaperuna"]
+        "spyNames": ["Antônio", "Bartolomeu", "Domingos", "Estêvão", "Fernão", "Francisco", "Pascoal", "Salvador", "Tomé", "Bianca"]
+    },
+
+	//Africa
+	{
+		"name": "Ethiopia",
+		"leaderName": "",
+		"adjective": [""],
+		"startBias": ["Jungle"],
+		"preferredVictorType": "",
+
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"defeated": "",
+		"attacked": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		"tradeRequest": "",
+		
+		"outerColor": [18,66,22],
+		"innerColor": [255,56,56],
+		"style": "TBD",
+		"uniqueName": "TBD",
+		"uniques": [
+		],
+		"cities": [
+			"Addis Ababa",
+			"Harar",
+			"Adwa",
+			"Lalibela",
+			"Gondor",
+			"Axum",
+			"Dire Dawa",
+			"Bahir Dar",
+			"Adama",
+			"Mek'ele",
+			"Awasa",
+			"Jimma",
+			"Jijiga",
+			"Dessie",
+			"Debre Berhan"]
+        "spyNames": ["Mulu Ken", "Wendimu", "Li'ol", "Demeke", "Mulu Alem", "Abebech", "Zema", "Mihret", "Kebedech", "Alemnesh"]
+    },
+	
+	//Asia
+	{
+		"name": "Japanese Empire",
+		"leaderName": "Hirohito",
+		"adjective": ["Japanese"],
+		"startBias": ["Coast"],
+		"preferredVictorType": "Domination",
+
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"defeated": "",
+		"attacked": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		"tradeRequest": "",
+		
+		"outerColor": [255,255,255],
+		"innerColor": [255,0,0],
+		"style": "Japanese",
+		"uniqueName": "TBD",
+		"uniques": [
+		],
+		"cities": [
+			"Tokyo",
+			"Osaka",
+			"Kyoto",
+			"Nagoya",
+			"Kanazawa",
+			"Hiroshima",
+			"Yokohama",
+			"Wakayama",
+			"Sendai",
+			"Tokushima",
+			"Hagi",
+			"Shuri",
+			"Toyama",
+			"Kumamoto",
+			"Fukuoko"]
+        "spyNames": ["Akaishi", "Oki", "Hattori", "Morozumi", "Momochi", "Kawashima", "Orin", "Sakanishi", "Kaede", "Mochizuki"]
+    },
+    {
+        "name": "Siam",
+        "leaderName": "Prajadhipok",
+        "adjective": ["Siamese"],
+        "startBias": ["Avoid [Coast]","River"],
+		"preferredVictorType": "Cultural",
+		
+        "startIntroPart1": "",
+        "startIntroPart2": "",
+		
+        "declaringWar": "You lowly, arrogant fool! I will make you regret of your insolence!",
+        "attacked": "You scoundrel! I shall prepare to fend you off!",
+        "defeated": "Althought I lost, my honor shall endure. I wish you good luck.",
+        "introduction": "I, Somdet Chaofa Prajadhipok Sakdidej, King of Siam, consider it a great honor that you have walked to visit my country of Siam.",
+		
+        "neutralHello": "Welcome.",
+        "hateHello": "Greetings.",
+        "tradeRequest": "Greetings. I believe this is a fair proposal for both parties. What do you think?",
+		
+        "outerColor": [167, 19, 45],
+        "innerColor": [253, 251, 251],
+        "uniqueName": "Strict Neutrality",
+        "uniques": [
+            "[+50]% [Culture] from City-States",
+            "[+50]% [Food] from City-States",
+            "[+50]% [Faith] from City-States",
+            "[+50]% [Happiness] from City-States",
+            "[+50]% Happiness from luxury resources gifted by City-States",
+            "Military Units gifted from City-States start with [+10] XP"
+        ],
+        "cities": [
+		"Bangkok",
+		"Lopburi",
+		"Nonthaburi",
+		"Chiang Mai",
+		"Hat Yai",
+		"Surat Thani",
+		"Phetchabun",
+		"Khon Kaen",
+		"Udon Thani",
+		"Ubon Ratchathani",
+		"Korat",
+		"Nakhon Si Thammarat",
+		"Chiang Tung",
+		"Syburi",
+		"Phra Tabong"
+		]
+        "spyNames": ["Aran", "Chanarong", "Kiet", "Niran", "Virote", "Kulap", "Mayuree", "Phueng", "Ratana", "Tola"]
+    },
+	
+	//Oceania
+	
+	{
+		"name": "ANZAC",
+		"leaderName": "",
+		"adjective": [""],
+		"startBias": ["Coast"],
+		"preferredVictorType": "",
+
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"defeated": "",
+		"attacked": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		"tradeRequest": "",
+		
+		"outerColor": [0,0,0],
+		"innerColor": [255,255,255],
+		"style": "TBD",
+		"uniqueName": "TBD",
+		"uniques": [
+		],
+		"cities": [
+			"Canberra",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			""]
+        "spyNames": ["", "", "", "", "", "", "", "", "", ""]
+    },
+	
+	//Null
+	
+	{
+		"name": "The Tortured Ones",
+		"leaderName": "The Mechanist",
+		"adjective": ["Tortured"],
+		"startBias": ["Plains"],
+		"preferredVictorType": "Domination",
+		"favoredReligion": "Mechanizationism",
+
+		"startIntroPart1": "THERE IS NO HOPE. THE PATH OF PROGRESS IS A TORTURED PATH.\n\nTHE TORTURED PATH ONLY BRINGS DECEPTION, SUFFERING, AND DEATH.\n\nWE WERE PROMISED A QUICK WAR, THE WAR DESOLATED THE WORLD.\n\nWHAT DID THEY DO TO US?\n\nWHAT ARE THESE MECHANIZED ABOMINATIONS?\n\nWHY MUST WE SUFFER, WHILE THEY STUDY US?\n\nTHERE IS NO HOPE. THERE IS NO HOPE. THERE IS NO HOPE.\nTHERE IS NO HOPE. THERE IS NO HOPE. THERE IS NO HOPE.\nTHERE IS NO HOPE. THERE IS NO HOPE. THERE IS NO HOPE.\nTHERE IS NO HOPE. THERE IS NO HOPE. THERE IS NO HOPE.\nTHERE IS NO HOPE. THERE IS NO HOPE. THERE IS NO HOPE.\nTHERE IS NO HOPE. THERE IS NO HOPE. THERE IS NO HOPE.\nTHERE IS NO HOPE. THERE IS NO HOPE. THERE IS NO HOPE.\nTHERE IS NO HOPE. THERE IS NO HOPE. THERE IS NO HOPE.",
+		"startIntroPart2": "THERE IS HOPE...",
+		
+		"declaringWar": "THE DESTRUCTION OF YOU IS A NECESSARY MOVE.",
+		"defeated": "THERE IS HOPE...",
+		"attacked": "THERE IS NO HOPE.",
+		"introduction": "I WELCOME YOU FELLOW HUMAN. I AM THE REPRESENTATIVE, SPEAKER FOR OUR LEADER, THE MECHANIST. PLEASE, DON'T BE ALARMED BY OUR LOOKS",
+		
+		"neutralHello": "REMEMBER, HE IS ALWAYS WATCHING",
+		"hateHello": "...",
+		"tradeRequest": "TRADE?",
+		
+		"outerColor": [37,102,190],
+		"innerColor": [0,0,0],
+		"style": "Mech",
+		"uniqueName": "The Tortured Path",
+		"uniques": [
+			"[-25]% enemy spy effectiveness [in all cities]"
+			"Gain an extra spy <upon entering the [Industrial era]>"
+			//"Starts with [Mechanization] adopted"
+		],
+		"cities": [
+			"Area 47",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			""]
+        "spyNames": ["Steve", "Mr. Murphy", "Julius", "William", "The Victim", "The Agony", "Amalgamation", "Miscreation ", "Trapsuit", "The Representative "] // Mr. Murphy reference to Robo-Cop, Julius, William, the Victim, The Agony, and Amalgamation reference to FNAF
+		"civilopediaText": [
+			{
+				"text": "The Tortured Path is the path of deception, suffering, and death. When the leaders promised a quick war 'The War to End All Wars' everyone believed them. As the war progressed nations began making mechanized abominations to help in their efforts. One group of people, located in the elusive Area 47, tried combining mechs with humans. Evidently, they failed."
+			},
+			{
+				"text": "10 years into the war, people resented the leadership of nations involved in the war. They began protesting, rioting, and revolting, all nations involved fell. Many new nations arose from the ashes of the war, some remnants of the old stayed, but, the damage had been done..."
+			},
+			{
+				"text": "That brings us to the present, the group at Area 47 was successful to some extent. They did manage to combine mech and man, but, it came at a cost. These men were mutilated, their bodies mangled messes of man and machine to be studied like animals. That was until the Mechanist took over. He helped the tortured revolt, kill them, and form their own civilization."
+			},
+			{
+				"text": "Now, his watchful eye governs all. Always watching, always in the shadows, only talking through his special enforcers, he has never shown his face. But, HE sees everything"
+			}
+		]
+    },
+	
+	// City-States
+	
+	{
+		"name": "The Hub",
+		"adjective": ["Hub"],
+		"cityStateType": "Mechanized",
+		"style": "",
+		"uniques": [
+			"[+2 Happiness] from every [Luxury resource]"
+		]
+		"declaringWar": "You are a threat to the existence of mankind, so, we must destroy you",
+		"attacked": "Ha! Ha haha, ha haha ha, haha ha ha.",
+		"defeated": "We may have been defeated but, our cause still stands. As long as there are men still fighting for the betterment of their future... There will be change.",
+		"outerColor": [0,0,0],
+		"innerColor": [254, 153, 0],
+		"cities": ["The Hub"]
+	},
+	{
+		"name": "The Order of the Roses",
+		"adjective": ["Rose"],
+		"cityStateType": "Mechanized",
+		"style": "",
+		"uniques": [
+		
+			]
+		"declaringWar": "Surrender now, or suffer the consequences.",
+		"attacked": "You will never win.",
+		"defeated": "The victory, is yours...",
+		"outerColor": [0,0,0],
+		"innerColor": [183, 113, 54],
+		"cities": ["Metrocity"]
+		"civilopediaText": [
+			{
+				"text": "Formed after the growing dissatisfaction from the Great War, the Order of the Roses was an all female organisation, dedicated to stopping the war. As time passed, the Order of the Roses began to get more, and more corrupted."
+			}
+			{
+				"text": "After the Great War began fracturing nations, the Order of the Roses took over Metrocity and formed there own tyrannical regime."
+			}
+		]
+	},
+	{
+		"name": "Danzig",
+		"adjective": ["Danzig"],
+		"cityStateType": "Cultural",
+
+		"declaringWar": "It has been agreed, that this is necessary!",
+		"attacked": "The League of Nations will prevent this aggression!",
+		"defeated": "Take it.",
+		"outerColor": [255, 0, 0],
+		"innerColor": [255,255,255],
+		"uniques": [
+			"[+10000000]% Culture cost of natural border growth [in all cities]",
+			"[+15]% [Science] [in all cities]",
+			"[+15]% [Gold] [in all cities]",
+			"[+15]% [Culture] [in all cities]",
+			"[+15]% [Production] [in all cities]",
+			"Cannot build [Settler] units"],
+		"cities": ["Danzig","Zoppot","Oliva","Tiegenhof","Neuteich",]
+	},
+	{
+		"name": "Holy Italian State",
+		"adjective": ["Papal"],
+		"cityStateType": "Faithful",
+		"style": "Partisan",
+		"uniques": [
+		
+			]
+		"declaringWar": "You are a threat to the existence of mankind, so, we must destroy you",
+		"attacked": "Ha! Ha haha, ha haha ha, haha ha ha.",
+		"defeated": "We may have been defeated but, our cause still stands. As long as there are men still fighting for the betterment of their future... There will be change.",
+		"outerColor": [0,0,0],
+		"innerColor": [183, 113, 54],
+		"cities": ["Vatican City"]
+	},
+	{
+		"name": "Nova Roma",
+		"adjective": ["Roman"],
+		"cityStateType": "Industrial",
+		"style": "Partisan",
+		"uniques": [
+			"[+20]% Strength <when fighting units from a Civilization with more Cities than you>",
+			"[+25]% Production towards any buildings that already exist in the Capital",
+			"[-10]% maintenance costs <for [Land] units>",
+			"[-50]% maintenance on road & railroads"]
+		"declaringWar": "My treasury contains little and my soldiers are getting impatient... (sigh) ...therefore you must die.",
+		"attacked": "So brave, yet so stupid! If only you had a brain similar to your courage.",
+		"defeated": "The gods have deprived Nova Roma of their favour. We have been defeated.",
+		"outerColor": [183,0,1],
+		"innerColor": [229,164,0],
+		"cities": ["Roma","Antium","Cumae","Neapolis","Ravenna"]
+	},
+	{
+		"name": "Württemberg",
+		"adjective": ["German"],
+		"cityStateType": "Industrial",
+		"style": "Partisan",
+		"uniques": [
+		
+			]
+		"declaringWar": "You are a threat to the existence of mankind, so, we must destroy you",
+		"attacked": "Ha! Ha haha, ha haha ha, haha ha ha.",
+		"defeated": "We may have been defeated but, our cause still stands. As long as there are men still fighting for the betterment of their future... There will be change.",
+		"outerColor": [0,0,0],
+		"innerColor": [189,18,32],
+		"cities": ["Stuttgart"]
+	},
+	
+	// Barbarian
+	
+	{
+		"name": "Barbarians",
+		"style": "Partisan",
+		"outerColor": [0, 0, 0],
+		"innerColor": [150, 150, 150],
+		"uniques": ["[-33]% Strength <vs cities> <before discovering [Radio]>"]
+	}
+]

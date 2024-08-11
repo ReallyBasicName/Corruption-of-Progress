@@ -1,0 +1,287 @@
+[
+	{
+		"columnNumber": 0,
+		"era": "Desolation era",
+		"techCost": 20,
+		"buildingCost": 40,
+		"wonderCost": 100,
+		"techs": [
+			{
+				"name": "Great War Tech",
+				"row": 5,
+				"quote": "",
+				"uniques": ["Starting tech"]
+			}
+		]
+	},
+	{
+		"columnNumber": 1,
+		"era": "Desolation era",
+		"techCost": 60,
+		"buildingCost": 60,
+		"wonderCost": 125,
+		"techs": [
+			{
+				"name": "Improved Navy",
+				"row": 1,
+				"prerequisites": ["Great War Tech"],
+				"quote": "",
+				"uniques": []
+			},
+			{
+				"name": "Wartime Agriculture",
+				"row": 3,
+				"prerequisites": ["Great War Tech"],
+				"quote": "",
+				"uniques": []
+			},
+			{
+				"name": "Wartime Extraction",
+				"row": 5,
+				"prerequisites": ["Great War Tech"],
+				"quote": "",
+				"uniques": []
+			},
+			{
+				"name": "Radio",
+				"row": 7,
+				"prerequisites": ["Great War Tech"],
+				"quote": "",
+				"uniques": []
+			},
+			{
+				"name": "Early Mechanization",
+				"row": 9,
+				"prerequisites": ["Great War Tech"],
+				"quote": "",
+				"uniques": []
+			},
+			{
+				"name": "Wartime Factory Efforts",
+				"row": 11,
+				"prerequisites": ["Great War Tech"],
+				"quote": "",
+				"uniques": []
+			}
+		]
+	},
+	{
+		"columnNumber": 2,
+		"era": "Desolation era",
+		"techCost": 120,
+		"buildingCost": 75,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name": "Naval Mechanization",
+				"row": 1,
+				"prerequisites": ["Improved Navy"],
+				"quote": "",
+				"uniques": []
+			},
+			{
+				"name": "Naval Extraction",
+				"row": 2,
+				"prerequisites": ["Improved Navy"],
+				"quote": "",
+				"uniques": []
+			},
+			{
+				"name": "Wartime Education",
+				"row": 4,
+				"prerequisites": ["Wartime Agriculture","Wartime Extraction"],
+				"quote": "",
+				"uniques": []
+			},
+			{
+				"name": "Radar",
+				"row": 6,
+				"prerequisites": ["Radio"],
+				"quote": "",
+				"uniques": []
+			},
+			{
+				"name": "Mechanization",
+				"row": 10,
+				"prerequisites": ["Early Mechanization","Wartime Factory Efforts"],
+				"quote": "",
+				"uniques": []
+			},
+			{
+				"name": "Field Fortifications",
+				"row": 11,
+				"prerequisites": ["Wartime Factory Efforts"],
+				"quote": "",
+				"uniques": []
+			}
+		]
+	},
+	{
+		"columnNumber": 3,
+		"era": "Rebirth era",
+		"techCost": 250,
+		"buildingCost": 100,
+		"wonderCost": 250,
+		"techs": [
+		]
+	},
+	{
+		"columnNumber": 4,
+		"era": "Rebirth era",
+		"techCost": 425,
+		"buildingCost": 120,
+		"wonderCost": 300,
+		"techs": [
+		]
+	},
+	{
+		"columnNumber": 5,
+		"era": "Mechanization era",
+		"techCost": 650,
+		"buildingCost": 160,
+		"wonderCost": 400,
+		"techs": [
+		]
+	},
+	{
+		"columnNumber": 6,
+		"era": "Mechanization era",
+		"techCost": 1000,
+		"buildingCost": 200,
+		"wonderCost": 500,
+		"techs": [
+			{
+				"name": "Radi",
+				"row": 10,
+				"prerequisites": ["Mechanization"],
+				"quote": ""
+			}
+		]
+	},
+	{
+		"columnNumber": 7,
+		"era": "Industrial era",
+		"techCost": 1300,
+		"buildingCost": 250,
+		"wonderCost": 625,
+		"techs": [
+			{
+				"name": "Rader",
+				"row": 10,
+				"prerequisites": ["Radi"],
+				"quote": ""
+			}
+		]
+	},
+	{
+		"columnNumber": 8,
+		"era": "Industrial era",
+		"techCost": 2000,
+		"buildingCost": 300,
+		"wonderCost": 750,
+		"techs": [
+		]
+	},
+	{
+		"columnNumber": 9,
+		"era": "Restoration era",
+		"techCost": 2750,
+		"buildingCost": 360,
+		"wonderCost": 920,
+		"techs": [
+			{
+				"name": "Combined Arms",
+				"row": 8,
+				"prerequisites": ["Radar"],
+				"quote": "The root of the evil is not the construction of new, more dreadful weapons. It is the spirit of conquest."
+			},
+		]	
+	},
+	{
+		"columnNumber": 10,
+		"era": "Restoration era",
+		"techCost": 3500,
+		"buildingCost": 500,
+		"wonderCost": 1060,
+		"techs": [
+			{
+				"name": "Paratroopers",
+				"row": 5,
+				"prerequisites": ["Combined Arms"],
+				"quote": "."
+			},
+		]
+	},
+	{
+		"columnNumber": 11,
+		"era": "Culmination era",
+		"techCost": 4750,
+		"buildingCost": 500,
+		"wonderCost": 1250,
+		"techs": [
+		]
+	},
+	{
+		"columnNumber": 12,
+		"era": "Culmination era",
+		"techCost": 5750,
+		"buildingCost": 500,
+		"wonderCost": 1250,
+		"techs": [
+		]
+	},
+	{
+		"columnNumber": 13,
+		"era": "Retro era",
+		"techCost": 7250,
+		"buildingCost": 500,
+		"wonderCost": 1250,
+		"techs": [
+		]
+	},
+	{
+		"columnNumber": 14,
+		"era": "Retro era",
+		"techCost": 10000,
+		"buildingCost": 750,
+		"wonderCost": 2000,
+		"techs": [
+		]
+	},
+	{
+		"columnNumber": 15,
+		"era": "Atomic era",
+		"techCost": 17500,
+		"buildingCost": 750,
+		"wonderCost": 2000,
+		"techs": [
+		]
+	},
+	{
+		"columnNumber": 16,
+		"era": "Atomic era",
+		"techCost": 25000,
+		"buildingCost": 750,
+		"wonderCost": 2000,
+		"techs": [
+		]
+	},
+	{
+		"columnNumber": 17,
+		"era": "Retro-Future era",
+		"techCost": 35000,
+		"buildingCost": 750,
+		"wonderCost": 2000,
+		"techs": [
+			{
+				"name": "Atomic Tech",
+				"row": 5,
+				"prerequisites": ["Paratroopers"],
+				"uniques": [
+					"Can be continually researched"
+				],
+				"quote": "I think we agree, the past is over."
+			}
+		]
+	}
+]

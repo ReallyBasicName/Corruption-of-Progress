@@ -1,0 +1,374 @@
+[
+	{
+		"name": "Farm",
+		"terrainsCanBeBuiltOn": ["Plains","Desert","Wasteland"],
+		"food": 1,
+		"turnsToBuild": 7,
+		"uniques": [
+			"Food source",
+			"Can also be built on tiles adjacent to fresh water",
+			"[+1 Food] from [Fresh water] tiles",
+			"Pillaging this improvement yields approximately [+10 Gold]"
+		],
+		"shortcutKey": "F"
+	},
+	{
+		"name": "Mine",
+		"terrainsCanBeBuiltOn": ["Hill"],
+		"production": 1,
+		"turnsToBuild": 9,
+		"techRequired": "Wartime Extraction",
+		"uniques": [
+			"Pillaging this improvement yields approximately [+10 Gold]"
+		],
+		"shortcutKey": "M"
+	},
+	{
+		"name": "Pasture",
+		"turnsToBuild": 7,
+		"techRequired": "Wartime Agriculture",
+		"uniques": [
+			"Food source",
+			"Can only be built to improve a resource",
+			"Pillaging this improvement yields approximately [+10 Gold]"
+		],
+		"shortcutKey": "P"
+	},
+	{
+		"name": "Solar Panels",
+		"terrainsCanBeBuiltOn": [
+			"Desert"
+		],
+		"production": 1,
+		"turnsToBuild": 14,
+		"techRequired": "Paratroopers",
+		"uniques": [
+			"Provides [1] [Power]",
+			"Pillaging this improvement yields approximately [+10 Gold]"
+		],
+		"shortcutKey": "L"
+	},
+	{
+		"name": "Windmills",
+		"terrainsCanBeBuiltOn": [
+			"Plains",
+			"Wasteland",
+		],
+		"production": 1,
+		"turnsToBuild": 10,
+		"uniques": [
+			"Provides [1] [Power]",
+			"Pillaging this improvement yields approximately [+10 Gold]"
+		],
+		"shortcutKey": "W"
+	},
+	{
+		"name": "Terrace farm",
+		"terrainsCanBeBuiltOn": ["Hill"],
+		"turnsToBuild": 10,
+		"food": 1,
+		"production": 1,
+		"uniques": [
+			"Food source",
+			"Cannot be built on [Bonus resource] tiles",
+			"[+1 Food] for each adjacent [Mountain]",
+			"[+1 Food, -1 Gold] from [Fresh water] tiles",
+			"Pillaging this improvement yields approximately [+10 Gold]"
+		],
+		"shortcutKey": "T"
+	},
+
+	// Resource-specific
+	{
+		"name": "Salvage Depot",
+		"turnsToBuild": 5,
+		"uniques": [
+			"Food source",
+			"Does not need removal of [Forest]",
+			"Can only be built to improve a resource",
+			"Pillaging this improvement yields approximately [+10 Gold]"
+		],
+		"shortcutKey": "C"
+	},
+	{
+		"name": "Oil Well",
+		"turnsToBuild": 9,
+		"techRequired": "Wartime Extraction",
+		"uniques": ["Can only be built to improve a resource", "Cannot be built on [Water] tiles", "Pillaging this improvement yields approximately [+20 Gold]"],
+		"shortcutKey": "W"
+	},
+	{
+		"name": "Offshore Platform",
+		"techRequired": "Naval Extraction",
+		"uniques": ["Can only be built to improve a resource", "Can only be built on [Water] tiles", "Pillaging this improvement yields approximately [+20 Gold]"],
+		"shortcutKey": "P"
+	},
+	{
+		"name": "Plantation",
+		"turnsToBuild": 6,
+		"techRequired": "Wartime Agriculture",
+		"gold": 1,
+		"uniques": ["Can only be built to improve a resource", "Pillaging this improvement yields approximately [+10 Gold]"],
+		"shortcutKey": "P"
+	},
+	{
+		"name": "Quarry",
+		"turnsToBuild": 8,
+		"techRequired": "Wartime Extraction",
+		"uniques": ["Can only be built to improve a resource", "Pillaging this improvement yields approximately [+20 Gold]"],
+		"shortcutKey": "Q"
+	},
+	{
+		"name": "Fishing Boats",
+		"terrainsCanBeBuiltOn": ["Coast", "Ocean"],
+		"uniques": [
+			"Food source",
+			"Can only be built to improve a resource",
+			"Pillaging this improvement yields approximately [+10 Gold]"
+		]
+	},
+
+	// Military improvement
+	{
+		"name": "Trench",
+		"terrainsCanBeBuiltOn": [
+			"Plains",
+			"Wasteland",
+			"Desert",
+			"Hill",
+			"Grime",
+			"Soot",
+		],
+		"turnsToBuild": 4,
+		"uniques": [
+			"Gives a defensive bonus of [25]%",
+			"Can be built outside your borders"
+		],
+		"shortcutKey": "D"
+	},
+	{
+		"name": "Fort",
+		"terrainsCanBeBuiltOn": [
+			"Plains",
+			"Wasteland",
+			"Desert",
+			"Hill",
+			"Grime",
+			"Soot",
+		],
+		"turnsToBuild": 6,
+		"uniques": [
+			"Gives a defensive bonus of [50]%",
+			"Can be built outside your borders"
+		],
+		"shortcutKey": "O"
+	},
+
+	// Transportation
+	{
+		"name": "Road",
+		"turnsToBuild": 4,
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": [
+			"Can be built outside your borders",
+			"Costs [1] [Gold] per turn when in your territory"
+		],
+		"shortcutKey": "R"
+	},
+	{
+		"name": "Railroad",
+		"turnsToBuild": 10,
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": [
+			"Can be built outside your borders",
+			"Costs [2] [Gold] per turn when in your territory"
+		],
+		"shortcutKey": "R"
+	},
+	// Removals
+	{
+		"name": "Remove Forest", 
+		"turnsToBuild": 4,
+		"terrainsCanBeBuiltOn": ["Forest"],
+		"uniques": ["Can be built outside your borders"],
+		"shortcutKey": "X"
+	},
+	/*{
+		"name": "Remove Jungle", 
+		"turnsToBuild": 7,
+		"terrainsCanBeBuiltOn": ["Jungle"],
+		"uniques": ["Can be built outside your borders"],
+		"shortcutKey": "X"
+	},*/
+	// These are unique and have unique in-game checks related to them
+	{
+		"name": "Remove Road",
+		"turnsToBuild": 2,
+		"uniques": ["Can be built outside your borders"]
+	},
+	{
+		"name": "Remove Railroad",
+		"turnsToBuild": 2,
+		"uniques": ["Can be built outside your borders"]
+	},
+	{
+		"name": "Cancel improvement order",
+		"uniques": ["Can be built outside your borders"],
+		"shortcutKey": "."
+	},
+        // Purely for turnsToBuild and civilopediaText. Unbuildable so it doesn't show in ImprovementPicker
+        {
+                "name": "Repair",
+                "terrainsCanBeBuiltOn": ["Land"],
+                "turnsToBuild": 2,
+                "shortcutKey": "E",
+                "uniques": ["Unbuildable"],
+                "civilopediaText": [{"text":"Repairs a pillaged Improvement or Route"}]
+        },
+	// Great Person improvements
+	{
+		"name": "Academy",
+		"science": 4,
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": [
+			"Great Improvement",
+			"Gives a defensive bonus of [10]%",
+			"Removes removable features when built",
+			"[+1 Science] for each adjacent [Forest]",
+			"[+1 Science] for each adjacent [Jungle]",
+			"Pillaging this improvement yields approximately [+20 Gold]"
+		]
+	},
+	{
+		"name": "Outpost",
+		"production": 2,
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": [
+			"Great Improvement",
+			"Gives a defensive bonus of [75]%",
+			"Adjacent enemy units ending their turn take [30] damage",
+			"Removes removable features when built",
+			"Can be built just outside your borders",
+			"Gain control over [all] tiles in a [1]-tile radius",
+			"Pillaging this improvement yields approximately [+20 Gold]"
+		]
+	},
+	{
+		"name": "Oil Extractor",
+		"production": 1,
+		"gold": -1,
+		"uniques": [
+			"Provides [4] [Oil]",
+			"Pillaging this improvement yields approximately [+10 Gold]"
+		],
+		"shortcutKey": "Y"
+	},
+	{
+		"name": "Prison farm",
+		"production": 2,
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": [
+			"Great Improvement",
+			"Gives a defensive bonus of [10]%",
+			"[+1 Food, -1 Gold] from [Fresh water] tiles",
+			"Removes removable features when built",
+			"Pillaging this improvement yields approximately [+20 Gold]"
+		]
+	},
+	{
+		"name": "Manufactory",
+		"production": 3,
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": [
+			"Great Improvement",
+			"Gives a defensive bonus of [10]%",
+			"Removes removable features when built",
+			"Pillaging this improvement yields approximately [+20 Gold]"
+		]
+	},
+	{
+		"name": "Citadel",
+		"science": 2,
+		"gold": 2,
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": [
+			"Gives a defensive bonus of [100]%",
+			"Adjacent enemy units ending their turn take [30] damage",
+			"Great Improvement",
+			"Gain control over [all] tiles in a [1]-tile radius",
+			"Can be built just outside your borders",
+			"Removes removable features when built"
+		]
+	},
+	{
+		"name": "Seminary",
+		"faith": 3,
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": [
+			"Great Improvement",
+			"Gives a defensive bonus of [10]%",
+			"Removes removable features when built",
+			"Pillaging this improvement yields approximately [+20 Gold]"
+		]
+	},
+	{
+		"name": "Factory farm",
+		"food": 4,
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": [
+			"Great Improvement",
+			"Food source",
+			"Gives a defensive bonus of [10]%",
+			"Removes removable features when built",
+			"Pillaging this improvement yields approximately [+20 Gold]"
+		]
+	},
+
+	//General
+	{
+		"name": "City center",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": [
+			"Unpillagable",
+			"Irremovable",
+			"Unbuildable",
+			"Ensures a minimum tile yield of [+2 Food, +1 Production]"
+		],
+		"civilopediaText": [
+			{
+				"text": "Marks the center of a city"
+			},
+			{
+				"text": "Appearance changes with the technological era of the owning civilization"
+			}
+		]
+	},
+	{
+		"name": "Survivor camp",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": [
+			"Unpillagable",
+			"Provides a random bonus when entered",
+			"Unbuildable"
+		]
+	},
+	{
+		"name": "City ruins",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": [
+			"Gives a defensive bonus of [10]%",
+			"Unpillagable",
+			"Unbuildable",
+			"Will be replaced by automated workers"
+		]
+	},
+	{
+		"name": "Barbarian encampment",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": [
+			"Gives a defensive bonus of [25]%",
+			"Unpillagable",
+			"Unbuildable"
+		]
+	}
+]

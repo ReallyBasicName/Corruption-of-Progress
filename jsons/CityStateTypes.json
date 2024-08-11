@@ -1,0 +1,112 @@
+[
+    {
+        "name": "Idealogical",
+        "friendBonusUniques": [
+            "[+3 Culture] <before the [Mechanization era]>",
+            "[+6 Culture] <starting from the [Mechanization era]> <before the [Restoration era]>",
+            "[+13 Culture] <starting from the [Restoration era]>"
+        ],
+        "allyBonusUniques": [
+            "[+6 Culture] <before the [Mechanization era]>",
+            "[+12 Culture] <starting from the [Mechanization era]> <before the [Restoration era]>",
+            "[+26 Culture] <starting from the [Restoration era]>"
+        ],
+        "color": [139, 96, 255]
+    },
+    {
+        "name": "Agricultural",
+        "friendBonusUniques": [
+            "[+2 Food] [in capital] <before the [Restoration era]>",
+            "[+4 Food] [in capital] <starting from the [Restoration era]>"
+        ],
+        "allyBonusUniques": [
+            "[+2 Food] [in capital] <before the [Restoration era]>", "[+1 Food] [in all cities] <before the [Restoration era]>",
+            "[+4 Food] [in capital] <starting from the [Restoration era]>", "[+2 Food] [in all cities] <starting from the [Restoration era]>"
+        ],
+        "color": [56, 255, 112]
+    },
+    {
+        "name": "Medicinal",
+        "friendBonusUniques": [
+            "[+2 Happiness] <before the [Mechanization era]>",
+            "[+3 Happiness] <starting from the [Mechanization era]>"
+        ],
+        "allyBonusUniques": [
+            "[+2 Happiness] <before the [Mechanization era]>",
+            "[+3 Happiness] <starting from the [Mechanization era]>",
+            "Provides a unique luxury"
+        ],
+        "color": [255, 216, 0]
+    },
+    {
+        "name": "Mechanized",
+        "friendBonusUniques": ["Provides military units every ≈[20] turns"],
+        "allyBonusUniques": ["Provides military units every ≈[17] turns"],
+        "color": [255, 0, 0]
+    },
+    {
+        "name": "Faithful",
+        "friendBonusUniques":  [
+            "[+3 Faith] <before the [Mechanization era]>",
+            "[+6 Faith] <starting from the [Mechanization era]> <before the [Restoration era]>",
+            "[+13 Faith] <starting from the [Restoration era]>"
+        ],
+        "allyBonusUniques":  [
+            "[+6 Faith] <before the [Mechanization era]>",
+            "[+12 Faith] <starting from the [Mechanization era]> <before the [Restoration era]>",
+            "[+26 Faith] <starting from the [Restoration era]>"
+        ],
+        "color": [255, 255, 255]
+    },
+    {
+        "name": "Scientific",
+        "friendBonusUniques":  [
+            "[+5 Science] <before the [Mechanization era]>",
+            "[+15 Science] <starting from the [Mechanization era]> <before the [Restoration era]>",
+            "[+45 Science] <starting from the [Restoration era]>"
+        ],
+        "allyBonusUniques":  [
+            "[+10 Science] <before the [Mechanization era]>",
+            "[+30 Science] <starting from the [Mechanization era]> <before the [Restoration era]>",
+            "[+60 Science] <starting from the [Restoration era]>"
+        ],
+        "color": [55, 55, 255]
+    },
+    {
+        "name": "Industrial",
+        "friendBonusUniques": [
+            "[+3 Production] [in capital] <before the [Restoration era]>",
+			"Provides [1] [Oil] <before the [Restoration era]>",
+            "[+6 Production] [in capital] <starting from the [Restoration era]>",
+			"Provides [1] [Coolant] <starting from the [Restoration era]>",
+			"Provides [3] [Oil] <starting from the [Restoration era]>"
+        ],
+        "allyBonusUniques": [
+            "[+3 Production] [in capital] <before the [Restoration era]>", "[+2 Production] [in all cities] <before the [Restoration era]>",
+			"Provides [2] [Oil] <before the [Restoration era]>"
+            "[+6 Production] [in capital] <starting from the [Restoration era]>", "[+4 Production] [in all cities] <starting from the [Restoration era]>",
+			"Provides [1] [Aetherium] <starting from the [Restoration era]>"
+			"Provides [2] [Coolant] <starting from the [Restoration era]>",
+			"Provides [1] [Infernium] <starting from the [Restoration era]>"
+			"Provides [5] [Oil] <starting from the [Restoration era]>"
+        ],
+        "color": [220, 100, 15]
+    },
+    {
+        "name": "Isolationist",
+        "friendBonusUniques": [
+            "[-2 Happiness] <before the [Mechanization era]>",
+            "[+1 Food] [in capital] <before the [Mechanization era]>",
+            "[-3 Happiness] <starting from the [Mechanization era]>"
+            "[+2 Food] [in capital] <starting from the [Mechanization era]>"
+        ],
+        "allyBonusUniques": [
+            "[-2 Happiness] <before the [Mechanization era]>",
+            "[+2 Food] [in capital] <before the [Mechanization era]>",
+            "[-3 Happiness] <starting from the [Mechanization era]>",
+            "[+4 Food] [in capital] <starting from the [Mechanization era]>"
+			"Provides military units every ≈[12] turns"
+        ],
+        "color": [149, 149, 149]
+    },
+]

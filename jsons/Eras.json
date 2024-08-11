@@ -1,0 +1,174 @@
+[
+	{
+		"name": "Desolation era", //1915
+		"researchAgreementCost": 150,
+		"startingSettlerCount": 0, // These values should not include the values given in Difficulties.json
+		"startingWorkerCount": 0,
+		"startingMilitaryUnitCount": 0,
+		"startingMilitaryUnit": "Scout",
+		"settlerPopulation": 1,
+		"startPercent": 0,
+		"citySound": "cityIndustrial",
+		"embarkDefense": 6,
+		"iconRGB": [255, 87, 35]
+		"uniques": [
+		]
+	},
+	{
+		"name": "Rebirth era", //1920
+		"researchAgreementCost": 150,
+		"startingSettlerCount": 0,
+		"startingWorkerCount": 0,
+		"startingMilitaryUnitCount": 0,
+		"startingMilitaryUnit": "Scout",
+		"startingGold": 0,
+		"startingCulture": 0,
+		"settlerPopulation": 1,
+		"startPercent": 10,
+		"citySound": "cityClassical",
+		"embarkDefense": 10,
+		"iconRGB": [233, 31, 99]
+		"uniques": [
+		]
+	},
+	{
+		"name": "Mechanization era", //1925
+		"researchAgreementCost": 250,
+		"startingSettlerCount": 0,
+		"startingWorkerCount": 0,
+		"startingMilitaryUnitCount": 0,
+		"startingMilitaryUnit": "Scout",
+		"startingGold": 0,
+		"startingCulture": 0,
+		"settlerPopulation": 1,
+		"startPercent": 25,
+		"citySound": "cityIndustrial",
+		"embarkDefense": 13,
+		"iconRGB": [157, 39, 176]
+		"uniques": [
+		]
+	},
+	{
+		"name": "Industrial era", //1930
+		"researchAgreementCost": 250,
+		"startingSettlerCount": 0,
+		"startingWorkerCount": 0,
+		"startingMilitaryUnitCount": 0,
+		"startingMilitaryUnit": "Scout",
+		"startingGold": 0,
+		"startingCulture": 0,
+		"settlerPopulation": 1,
+		"startPercent": 37,
+		"citySound": "cityIndustrial",
+		"embarkDefense": 16,
+		"iconRGB": [104, 58, 183]
+		"uniques": [
+			"Every major Civilization gains a spy once a civilization enters this era"
+		]
+	},
+	{
+		"name": "Restoration era", //1935
+		"researchAgreementCost": 300,
+		"startingSettlerCount": 0,
+		"startingWorkerCount": 0,
+		"startingMilitaryUnitCount": 0,
+		"startingMilitaryUnit": "Scout",
+		"startingGold": 0,
+		"startingCulture": 0,
+		"settlerPopulation": 1,
+		"startPercent": 50,
+		"citySound": "cityIndustrial",
+		"embarkDefense": 20,
+		"iconRGB": [63, 81, 182],
+		"uniques": [
+			"May not generate great prophet equivalents naturally",
+			"May buy [Great Prophet] units for [200] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([100])",
+			"Starting in this era disables religion",
+			"Every major Civilization gains a spy once a civilization enters this era"
+		]
+	},
+	{
+		"name": "Culmination era", //1940
+		"researchAgreementCost": 350,
+		"startingSettlerCount": 0,
+		"startingWorkerCount": 0,
+		"startingMilitaryUnitCount": 0,
+		"startingMilitaryUnit": "Scout",
+		"startingGold": 0,
+		"startingCulture": 0,
+		"settlerPopulation": 1,
+		"startPercent": 65,
+		"citySound": "cityIndustrial",
+		"embarkDefense": 24,
+		"iconRGB": [33, 150, 243],
+		"uniques": [
+			"May not generate great prophet equivalents naturally",
+			"May buy [Great Prophet] units for [200] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([100])",
+			"Starting in this era disables religion",
+			"Every major Civilization gains a spy once a civilization enters this era"
+		]
+	},
+	{
+		"name": "Retro era", //1945
+		"researchAgreementCost": 400,
+		"startingSettlerCount": 0,
+		"startingWorkerCount": 0,
+		"startingMilitaryUnitCount": 0,
+		"startingMilitaryUnit": "Scout",
+		"startingGold": 0,
+		"startingCulture": 0,
+		"settlerPopulation": 1,
+		"startPercent": 75,
+		"citySound": "cityIndustrial",
+		"embarkDefense": 29,
+		"iconRGB": [0, 150, 136],
+		"uniques": [
+			"May not generate great prophet equivalents naturally",
+			"May buy [Great Prophet] units for [200] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([100])",
+			"Starting in this era disables religion",
+			"Every major Civilization gains a spy once a civilization enters this era"
+		]
+	},
+	{
+		"name": "Atomic era", //1945+
+		"researchAgreementCost": 400,
+		"startingSettlerCount": 0,
+		"startingWorkerCount": 0,
+		"startingMilitaryUnitCount": 0,
+		"startingMilitaryUnit": "Scout",
+		"startingGold": 0,
+		"startingCulture": 0,
+		"settlerPopulation": 1,
+		"startPercent": 80,
+		"citySound": "cityIndustrial",
+		"embarkDefense": 33,
+		"iconRGB": [76, 176, 81],
+		"uniques": [
+			"May not generate great prophet equivalents naturally",
+			"May buy [Great Prophet] units for [200] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([100])",
+			"Starting in this era disables religion",
+			"Every major Civilization gains a spy once a civilization enters this era"
+		]
+	},
+	{
+		"name": "Retro-Future era", //added after I decided to make eras instead of dates // mostly for testing far future stuff
+		"researchAgreementCost": 400,
+		"startingSettlerCount": 0,
+		"startingWorkerCount": 0,
+		"startingMilitaryUnitCount": 0,
+		"startingMilitaryUnit": "Scout",
+		"startingGold": 0,
+		"startingCulture": 0,
+		"settlerPopulation": 1,
+		"startPercent": 80,
+		"citySound": "cityIndustrial",
+		"embarkDefense": 33,
+		"iconRGB": [76, 176, 81],
+		"uniques": [
+			"May not generate great prophet equivalents naturally",
+			"May buy [Great Prophet] units for [200] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([100])",
+			"Starting in this era disables religion",
+			"Every major Civilization gains a spy once a civilization enters this era"
+		]
+	}
+]
