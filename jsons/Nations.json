@@ -825,7 +825,7 @@
 	{
 		"name": "Danzig",
 		"adjective": ["Danzig"],
-		"cityStateType": "Cultural",
+		"cityStateType": "Idealogical",
 
 		"declaringWar": "It has been agreed, that this is necessary!",
 		"attacked": "The League of Nations will prevent this aggression!",
