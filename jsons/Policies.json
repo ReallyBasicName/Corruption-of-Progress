@@ -472,7 +472,7 @@
                     "[-25]% enemy spy effectiveness [in all cities]"
                 ],
                 "requires": ["National Socialism"],
-                "row": 2,
+                "row": 3,
                 "column": 4
             },
             {
