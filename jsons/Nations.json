@@ -859,7 +859,7 @@
 	{
 		"name": "Nova Roma",
 		"adjective": ["Roman"],
-		"cityStateType": "Industrial",
+		"cityStateType": "Extraction",
 		"style": "Partisan",
 		"uniques": [
 			"[+20]% Strength <when fighting units from a Civilization with more Cities than you>",
@@ -876,7 +876,7 @@
 	{
 		"name": "Württemberg",
 		"adjective": ["German"],
-		"cityStateType": "Industrial",
+		"cityStateType": "Mechanized",
 		"style": "Partisan",
 		"uniques": [
 		
